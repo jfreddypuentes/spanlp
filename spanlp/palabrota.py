@@ -4,7 +4,6 @@ import random
 
 words = None
 _censor_chars = '@#$%!'
-_default_country = "COL"
 _censor_pool = []
 _countries = ["COL", "VEN"]
 
@@ -54,9 +53,6 @@ def get_censor_char():
 
 
 def censor(input_text, country=None):
-    """ Returns the input string with profanity replaced with a random string
-    of characters plucked from the censor_characters pool.
-    """
     ret = input_text
     _words = get_words(country=country)
     for word in _words:
@@ -66,6 +62,5 @@ def censor(input_text, country=None):
     return ret
 
 
-def contiene_palabrotas(texto=None, pais=None, incluir=None, exluir=None, censor_char=None) -> tuple:
-    return 'menso' in texto, texto
-
+def contains_palabrota(text):
+    return text != censor(text)

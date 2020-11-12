@@ -1,4 +1,4 @@
-from spanlp.palabrota import get_words, censor
+from spanlp.palabrota import get_words, censor, contains_palabrota
 
 
 def main():
@@ -14,7 +14,10 @@ def main():
     print(r)
     print(f"Encontro {len(r)} palabras para COL")
 
-    r = censor("Hola huevon cochina puta como esta?", country=None)
+    r = censor("Hola huevon cochina como esta?", country=None)
+    print(r)
+
+    r = contains_palabrota("Hola huevon")
     print(r)
 
 
