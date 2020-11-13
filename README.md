@@ -21,7 +21,7 @@ Los algoritmos y modulos se personalizan de forma dinámica con las estrategias 
 
 `from spanlp.palabrota import Palabrota`
 
-`frase = "Hola huevon cochina como esta?"`
+`frase = "Hola huevo cochin como esta?"`
 
 `palabrota = Palabrota()`
 
