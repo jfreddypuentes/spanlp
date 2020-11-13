@@ -21,7 +21,7 @@ class Palabrota():
     _words = None
     _censor_chars = '@#$%!'
     _censor_pool = []
-    _countries = ["COL", "VEN"] # TODO: obtener desde una funcion ddinamica.
+    _countries = ["COL", "VEN"]  # TODO: obtener desde una funcion ddinamica.
     _exclude = []
     _include = []
     _distance_metric = None
