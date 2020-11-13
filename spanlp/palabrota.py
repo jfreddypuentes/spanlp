@@ -42,7 +42,12 @@ class Palabrota():
     def __str__(self) -> str:
         return """\
                 Censor Chars: {}
-                Countries: {}""".format(self._censor_chars, self._countries)
+                Countries: {}
+                exclude words: {}
+                include words: {}
+                distance_metric: {}""".format(self._censor_chars, self._countries,
+                                              self._exclude, self._include,
+                                              self._distance_metric)
 
     @staticmethod
     def __get_data(path):

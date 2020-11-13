@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/spanlp/palabrota.py" line="53" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="329bd27a-d606-4f27-9305-29ab97bc3af8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/spanlp/palabrota.py" beforeDir="false" afterPath="$PROJECT_DIR$/spanlp/palabrota.py" afterDir="false" />
-    </list>
+    <list default="true" id="329bd27a-d606-4f27-9305-29ab97bc3af8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spanlp/palabrota.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+            <state relative-caret-position="364">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -83,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="820" />
@@ -176,25 +174,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605145011541</updated>
-      <workItem from="1605145014093" duration="12513000" />
+      <workItem from="1605145014093" duration="12744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12513000" />
+    <option name="totallyTimeSpent" value="12744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="820" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="820" extended-state="1" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.7711016" visible="true" weight="0.31181318" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.7711016" visible="true" weight="0.31181318" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.22889842" side_tool="true" visible="true" weight="0.31181318" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
@@ -248,8 +245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spanlp/palabrota.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="364">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
