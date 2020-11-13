@@ -1,3 +1,14 @@
+"""
+Estrategias para encontrar, limpiar y censurar groserias, vulgaridades y obscenidades en textos en Español.
+====================================
+Este modulo/clase implementa las siguientes funciones:
+    - censor
+    - constains_palabrota
+    - algoritmos matematicos de distancia y similitud entre palabras
+"""
+
+# Author: Jhon Freddy Puentes <jhonf.puentesn@konradlorenz.edu.co>
+
 import os
 import re
 import random
