@@ -43,9 +43,9 @@ class Palabrota():
         return """\
                 Censor Chars: {}
                 Countries: {}
-                exclude words: {}
-                include words: {}
-                distance_metric: {}""".format(self._censor_chars, self._countries,
+                Exclude words: {}
+                Include words: {}
+                Distance metric: {}""".format(self._censor_chars, self._countries,
                                               self._exclude, self._include,
                                               self._distance_metric)
 
