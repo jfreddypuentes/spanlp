@@ -8,3 +8,14 @@ Libreria para detectar, censurar  y limpiar groserias, vulgaridades y palabrotas
 * Censurar malas palabras en un sistema de relección de opiniones, sugerencias, quejas y reclamos.
 * Limpiar textos que serán publicados.
 * Detectar y elminar vulgaridades en textos que serán leidos y/o vistos por niños.
+
+## ¿Cómo funciona?
+Los algoritmos y modulos se personalizan de forma dinámica con las estrategias requeridas. Veamos ejemplos:
+
+1- Censurar vulgaridades por defecto para el pais "Colombia".
+2- Censurar palabras por defecto del pais "Venezuela" adicionando las palabras "carepapa", "burro" usando Levenshtein como estrategia.
+3- Tambien podrá censurar usando todas las vulgaridades configuradas para todos los paises de habla hispana.
+4- Puede personalizar los caracteres de censura, por ejemplo: @#¢∞¬÷∞ ó XXXXXXX ó @#@#@#
+
+## ¿Cómo usarlo?
+
