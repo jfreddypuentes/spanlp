@@ -1,24 +1,21 @@
-from spanlp.palabrota import get_words, censor, contains_palabrota
+from spanlp.palabrota import Palabrota
 
 
 def main():
-    r = get_words(country=["COL", "VEN"])
-    print(r)
-    print(f"Encontro {len(r)} palabras para COL y VEN")
 
-    r = get_words(country=["VEN"])
-    print(r)
-    print(f"Encontro {len(r)} palabras para VEN")
+    frase = "Hola huevon cochina como esta?"
 
-    r = get_words(country=["COL"])
-    print(r)
-    print(f"Encontro {len(r)} palabras para COL")
+    palabrota2 = Palabrota()
+    print(palabrota2.censor(frase))
+    palabrota2.set_censor_characters("x")
+    print(palabrota2.censor(frase))
 
-    r = censor("Hola huevon cochina como esta?", country=None)
-    print(r)
+    print("="*50)
 
-    r = contains_palabrota("Hola huevon")
-    print(r)
+    palabrota3 = Palabrota(countries=["COL"])
+    print(palabrota3.censor(frase))
+    palabrota3.set_censor_characters("X")
+    print(palabrota3.censor(frase))
 
 
 main()
