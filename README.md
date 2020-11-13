@@ -19,3 +19,20 @@ Los algoritmos y modulos se personalizan de forma dinámica con las estrategias 
 
 ## ¿Cómo usarlo?
 
+`from spanlp.palabrota import Palabrota`
+
+`frase = "Hola huevon cochina como esta?"`
+
+`palabrota = Palabrota()`
+
+`print(palabrota.censor(frase))`
+
+`palabrota.set_censor_characters("x")`
+
+`print(palabrota.censor(frase))`
+
+### Salida
+
+Hola %!#!@% #$!@%!% como esta?
+
+Hola xxxxxx xxxxxxx como esta?
