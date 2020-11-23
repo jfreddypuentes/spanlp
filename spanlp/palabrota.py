@@ -104,22 +104,16 @@ class Palabrota(object):
         word_list = []
         try:
             if self._countries and len(self._countries) > 0:
-                # output_file = self.__get_data("working_set" + self._dataset_extension)
                 working_set = []
-                # with open(output_file, 'w') as outfile:
                 for country in self._countries:
                     try:
                         filename = self.__get_data(country.value + self._dataset_extension)
                         with open(filename) as infile:
-                            # outfile.write(infile.read().lower())
                             working_set += infile.readlines()
-                        # outfile.write("\n")
                     except Exception as e:
                         print(f"[WARNING]: {country.value} does not exists in dataset. Message: {e}")
 
-                # filename = self.__get_data(output_file)
-                # f = open(filename)
-                word_list = working_set #f.readlines()
+                word_list = working_set
                 word_list = [sub.replace('\n', '') for sub in word_list]
                 word_list = [w.strip() for w in word_list if w and w not in self._exclude]
                 if self._include and len(self._include) > 0:
