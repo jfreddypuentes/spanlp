@@ -1,283 +1,290 @@
-flojo
-Arrecho
-Babieco
-Bola
-Bolas
-Cabilla
-Cabeza de guevo
-Cabeza de machete
-Cabeza de ponque
-Cabron
-Cabrona
-Cachapera
-Cachorro
-Cagon
-Cagalitroso
-Cagapalo
-Caliche
-Calienta Guevo
-Caligueva
-Ceguegue
-Cana
-Cangrejera
-Capot de Volkswagen
-Cara de Verga
-Cara e feto
-Carajo
-Caraja
-Carne con Papas
-Carteluo
-Cebillo
-Cebilluo
-Cocolla
-Coger
-Cojer
-Chavista
-Chola
-Chola e burro
-Chupa Culo
-Cojeculo
-Coje Culo
-Cojio
-Cojonera
-Come Chicle
-Confianza e´perro
-Conaza
-Conito
-Cono
-Cono e’ madre
-Cono e tu pepa
-Covero
-Coviao
-Cuaima
-Cuca
-Cuchara
-chocho
-Totona
-Culo
-Trasero
-Orto
-Culear
-Cule
-zingar
-tirar
-Culebra
-Culillo
-Culilluo
-Curda
-Curdo
-Cuatriboliao
-Comemierda
-Comegato
-Da Asco
-De Pinga
-Erg!
-Erg
-Escualido
-Enchavar
-Cagar
-Cagarla
-Geva
-Jeva
-Garrancho
-Garrancha
-Guevon
-Guevona
-Pendejo
-Guate
-Hala Bola
-Jala Bola
-Hijo de Puta
-Hijue´puta
-Hija de Puta
-Hijae´puta
-gran puta
-Hijo e’ las siete leches
-Hijo’er diablo
-Huele Huele
-GüeleGüele
-Kilua
-Ladilla
-Ladillao
-Ladillaa
-Lambusia
-Maestro PARCHA
-Machete
-Macheterico
-Macaco
-MAGAPA
-(M)al (A)liento
-(G)olpe de (A)la
-(P)ie de (A)tleta
-Majunche
-Mal cogida
-Malandro
-Malandra
-Mallen
-Malpario
-Malparia
-Maldiciento
-Maldicienta
-Mamagüevo
-Mamagüeva
-Mamagüeveteo
-Marico
-Mamarracho
-Mamarracha
-Marico triste
-Maricon
-Meason
-Menopausica
-Mierda
-Mio
-marico preso
-Matosurrero
-Muergano
-Muergana
-malagente
-Desgraciado
-Desgraciada
-Macana
-Microondas
-Moco
-Mojonero
-MOQUITO
-COME MOCO
-Muerdealmohada
-Moja’ el picure
-Niche
-nojoda
-nengue
-nona
-Pacharro
-Paco
-Pacufo
-Pacuso
-Pacusobo
-Pacucuso
-Paga peo
-Paja
-Paga Prote
-Pajizo
-pajuo
-pajua
-Palo
-Paloma
-Pandorga
-Panal Caga’o
-Papo
-Parcha
-Parchita
-Pargo
-Gay
-Pargula
-Parido por el sobaco
-Pata e’ Rolo
-Patear el tobo
-Payaso
-Pea
-Pegoste de olla
-Ratica
-Pendejo
-Pendeja
-Peo
-Pepa del Culo
-Pepita
-Pezcao
-Pecuso
-Pelele
+golpe de ala
+mal aliento
+pie de atleta
+arrecho
+babieco
+boca abierta
+bola
+bolas
 bolsa
-Estupido
-Perillaoriental
-Perro e’ quinta
-Perro e’ rancho
-Pichicosa
-Pichinga
-Pija
-Pinga
-Piripicho
-Plaga
-Plegocha
-Pocha
-Polvo del Gallo
-Polvo del Kerosene
-Porton de Iglesia
-Primo
-Pupu
-Puta
-Prostituta
-Queso
-Quesuo
-Quesua
-Rajunarepa
-Rata
-Realengo
-Recontra Cono’e madre
-mamaguevo
-Recontraconisimo
-Redoblona
-Relambechupaverga
-Relambepipe
-Rolitranco
-Rodaja de pina
-Rosalada
-Ruchar
-follar
-Relambe Guevo
-Mamador de Paloma
-Samo
-Sambumbia
-soplon
-sapo
-Simeloma
-SAIDELIU
-Sobrao
-Sobraa
-Sucio
-Serruchar
-Loco de Mierda
-Sopla Condon
-Soplar el Bisteck
-Tacazo
-Tarupido
-Teta
-Toche
-Gocho
-Temigoso
-Temigue
-Temiga
-Tierruo
-Tirilla
-Tenso
-Totona
-Tirar
-TrampolindebuchevergaOriental
-Trimardito
-Triplehijueputa
-Tufo
-Tusa
-Tu Taa Loco
-Trastanuta
-Tuki
-Violin
-Vaina
-Vasito de agua
-Verdugo
-Verga
-Vuerga
-Vergacion
-Veterano
-Vergatario
-Verano
-Volar papagallo
-Wircho
-Wircha
-Wiro
-Wepota
-Weon
-Zamarro
-Zingar
-Zorra
+cabeza de machete
+cabeza de ponque
+cabeza de guevo
+cabilla
+cabron
+cabrona
+cachapera
+cachorro
+cagalitroso
+cagapalo
+cagar
+cagarla
+cagon
+caliche
+calienta guevo
+caligueva
+cana
+cangrejera
+capot de volkswagen
+cara de tabla
+cara e feto
+cara de verga
+caraja
+carajo
+carne con papas
+carteluo
+cebillo
+cebilluo
+ceguegue
+chavista
+chocho
+chola
+chola e burro
+chupa culo
 cochina
-Zamuro
-Cara de tabla
+cocolla
+coger
+coje culo
+cojeculo
+cojer
+cojio
+cojonera
+come chicle
+come moco
+comegato
+comemierda
+conaza
+confianza de perro
+conito
+cono
+cono de tu pepa
+cono de madre
+covero
+coviao
+cuaima
+cuatriboliao
+cuca
+cuchara
+cuchara
+cule
+culear
+culebra
+culillo
+culilluo
+culo
+curda
+curdo
+da asco
+de pinga
+desgraciada
+desgraciado
+enchavar
+erg
+erga
+escualido
+estupido
+flojo
+follar
+garrancha
+garrancho
+gay
+geva
+gocho
+gran puta
+guate
+gueleguele
+guevon
+guevona
+hala bola
+hija de puta
+hijaeputa
+hijo de puta
+hijo de las siete leches
+hijo de diablo
+hijueputa
+huele huele
+jala bola
+jeva
+kilua
+ladilla
+ladilla
+ladillaa
+ladillao
+lambusia
+loco de mierda
+macaco
+macana
+machete
+macheterico
+maestro parcha
+magapa
+majunche
+mal cogida
+malagente
+malandra
+malandro
+maldicienta
+maldiciento
+maldita
+mallen
+malparia
+malparido
+malpario
+mamador de paloma,
+mamagueva
+mamagueveteo
+mamaguevo
+mamaguevo
+mamarracha
+mamarracho
+marico
+marico preso
+marico triste
+maricon
+matosurrero
+meason
+menopausica
+microondas
+mierda
+mio
+moco
+moja’ el picure
+mojonero
+moquito
+muerdealmohada
+muergana
+muergano
+nengue
+niche
+nojoda
+nona
+orto
+pacharro
+paco
+pacucuso
+pacufo
+pacuso
+pacusobo
+paga peo
+paga prote
+paja
+pajizo
+pajua
+pajuo
+pajuo
+palo
+paloma
+panal caga’o
+pandorga
+papo
+parcha
+parchita
+pargo
+pargula
+parido por el sobaco
+pata e’ rolo
+patear el tobo
+payaso
+pea
+pecuso
+pegoste de olla
+pelele
+pendeja
+pendejo
+pendejo
+pendejo
+peo
+pepa del culo
+pepita
+perillaoriental
+perro e’ quinta
+perro e’ rancho
+pezcao
+pichicosa
+pichinga
+pija
+pinga
+piripicho
+plaga
+plegocha
+pocha
+polvo del gallo
+polvo del kerosene
+porton de iglesia
+primo
+prostituta
+pupu
+puta
+queso
+quesua
+quesuo
+rajunarepa
+rata
+ratica
+realengo
+recontra cono’e madre
+recontraconisimo
+redoblona
+relambe guevo
+relambechupaverga
+relambepipe
+rodaja de pina
+rolitranco
+rosalada
+ruchar
+saideliu
+sambumbia
+samo
+sapo
+serruchar
+simeloma
+sobraa
+sobrao
+sopla condon
+soplar el bisteck
+soplon
+sucio
+tacazo
+tarupido
+temiga
+temigoso
+temigue
+tenso
+teta
+tierruo
+tirar
+tirar
+tirilla
+toche
+totona
+totona
+trampolindebuchevergaoriental
+trasero
+trastanuta
+trimardito
+triplehijueputa
+tu taa loco
+tufo
+tuki
+tusa
+vaina
+vasito de agua
+verano
+verdugo
+verga
+vergacion
+vergatario
+veterano
+violin
+volar papagallo
+vuerga
+weon
+wepota
+wircha
+wircho
+wiro
+zamarro
+zamuro
+zingar
+zingar
+zorra
