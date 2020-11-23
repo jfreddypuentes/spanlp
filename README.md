@@ -34,6 +34,9 @@ Incluye:
 * Detectar y eliminar vulgaridades en textos que serán leidos y/o vistos por niños.
 
 ## Instalación
+**Nota:** Esta versión se encuentra en Beta. No la use en producción aun. 
+Te recomiendo que la instales, pruebes y haz doble check sobre los resultados. <br>
+Si encuentra algun problema escribeme. 
 ```console
 pip install -i https://test.pypi.org/simple/ spanlp==0.0.4
 ```
