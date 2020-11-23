@@ -35,7 +35,7 @@ Incluye:
 
 ## Instalación
 ```console
-pip install spanlp
+pip install -i https://test.pypi.org/simple/ spanlp==0.0.4
 ```
 
 ## ¿Cómo funciona?
