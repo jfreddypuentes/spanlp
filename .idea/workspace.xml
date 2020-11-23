@@ -5,43 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="329bd27a-d606-4f27-9305-29ab97bc3af8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/jhonf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/ARG.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/BOL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/CHL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/CRI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/CUB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/DOM.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/ECU.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/ESP.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/GNQ.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/GTM.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/HND.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/MEX.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/NIC.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/PAN.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/PER.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/PRI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/PRY.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/SLV.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/URY.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/dataset/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/domain/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/domain/countries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/domain/strategies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanlp/tests/test_palabrota.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spanlp/dataset/COL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spanlp/dataset/COL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spanlp/dataset/VEN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spanlp/dataset/VEN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spanlp/dataset/working_set.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spanlp/palabrota.py" beforeDir="false" afterPath="$PROJECT_DIR$/spanlp/palabrota.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spanlp/palabrota.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1815">
@@ -77,22 +41,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spanlp/domain/countries.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="223">
+                <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="3165">
-                <caret line="230" selection-start-line="230" selection-end-line="230" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -168,9 +132,7 @@
         <option value="$PROJECT_DIR$/spanlp/tests/__init__.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/LICENSE" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/spanlp/domain/strategies.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spanlp/dataset/HND.txt" />
         <option value="$PROJECT_DIR$/spanlp/dataset/GTM.txt" />
         <option value="$PROJECT_DIR$/spanlp/dataset/DOM.txt" />
@@ -198,6 +160,8 @@
         <option value="$PROJECT_DIR$/spanlp/dataset/__init__.py" />
         <option value="$PROJECT_DIR$/spanlp/palabrota.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -305,17 +269,18 @@
       <workItem from="1605235298874" duration="527000" />
       <workItem from="1605564213461" duration="1050000" />
       <workItem from="1605567149193" duration="18808000" />
-      <workItem from="1606003421855" duration="28448000" />
+      <workItem from="1606003421855" duration="28753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61736000" />
+    <option name="totallyTimeSpent" value="62041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.59137577" visible="true" weight="0.23390558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59137577" visible="true" weight="0.17095852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.40862423" side_tool="true" weight="0.23032904" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -329,7 +294,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2074392" side_tool="true" weight="0.30769232" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7689031" visible="true" weight="0.39835164" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.7689031" visible="true" weight="0.28708792" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -396,13 +361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -563,16 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3165">
-            <caret line="230" selection-start-line="230" selection-end-line="230" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spanlp/domain/countries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -619,6 +567,23 @@
           <folding>
             <element signature="e#318#327#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="223">
+            <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>

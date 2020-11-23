@@ -7,6 +7,7 @@
 *.swp
 *.swo
 .DS_Store
+.idea
 build
 spanlp/dataset/working_set.txt
 
