@@ -35,7 +35,7 @@ Incluye:
 
 ## Instalación
 **Nota:** Esta versión se encuentra en Beta. No la use en producción aun. 
-Te recomiendo que la instales, pruebes y haz doble check sobre los resultados. <br>
+Te recomiendo que la instales, pruebes y haz doble check sobre los resultados.
 Si encuentra algun problema escribeme. 
 ```console
 pip install -i https://test.pypi.org/simple/ spanlp==0.0.4
