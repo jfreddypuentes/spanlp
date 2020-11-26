@@ -45,6 +45,22 @@ pip install -i https://test.pypi.org/simple/ spanlp==0.0.4
 Los algoritmos y modulos se personalizan de forma dinámica y muy flexible. Veamos algunos usos.
 
 ### Uso básico
+
+Validar si una palabra o frase contiene o no una palabrota:
+```python
+from spanlp.palabrota import Palabrota
+palabrota = Palabrota()
+print(palabrota.contains_palabrota("Hola huevon cómo está?"))
+# salida: True
+```
+
+```python
+from spanlp.palabrota import Palabrota
+palabrota = Palabrota()
+print(palabrota.contains_palabrota("Hola a todos cómo están?"))
+# salida: False
+```
+
 Censurar una frase con todo por defecto:
 
 ```python
