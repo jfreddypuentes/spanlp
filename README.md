@@ -1,5 +1,5 @@
 # spanlp
-Libreria para detectar, censurar  y limpiar groserias, vulgaridades y palabrotas en textos en Español.
+Libreria para detectar, censurar  y limpiar groserias, vulgaridades, palabras de odio, racismo y xenofobia en textos en Español.
 Puede usar el dataset de cualquir pais de habla hispana.
 
 Incluye:
@@ -28,6 +28,7 @@ Incluye:
 ## Casos de uso
 * Censurar vulgaridades en un texto.
 * Detectar y censurar vulgaridades en una sala de chat en linea.
+* Encontrar y censurar frases y palabras de odio, racismo y xenofia.
 * Censurar comentarios groseros o insultos en algún blog o aplicación web o sitio web.
 * Censurar malas palabras en un sistema de recolección de opiniones, sugerencias, quejas y reclamos.
 * Limpiar textos antes de ser publicados.
@@ -274,6 +275,77 @@ Excelente pregunta! no hay limite para la creatividad así que haz todas las pru
 * **Pruebas de caja negra** => Una vez instales la librería y hayas leido la documentación; Trata de usarla sin preocuparte como funciona o como obtuvo el resultado (Las pruebas no se hacen en base al código, sino a la interfaz); Eso si, valida que la salida o el resultado sea el que esperas. Te puedes guiar (pero no mucho) de las pruebas unitarias que están en: `/spanlp/tests/test_palabrota.py`
 
 * **Pruebas de caja blanca** => Si quieres vez como funciona la libreria, estas pruebas son las tuyas. Intenta entender la estructura, los algoritmos y flujos. Una vez los comprendas, "a dar palo", trata de quebar o romper la lógica, observa y encuentra si hay posibles formas de hacer que falle, prueba diferentes parametros, flujos, tipos de datos. Haz que falle, haz que se ponga lento! y me cuentas. ;)
+
+* **Pruebas de carga y stress** => Si lo tuyo son las pruebas de requisitos no funcionales, te invito a que sigas estos pasos para estresar la libreria y medir que tan escalable es frente a procesos de alta carga, mide la velocidad y que tan bien se comparta con miles o millones de hilos usandola al tiempo.
+
+Sigue estos pasos:
+
+1. Crear una API Rest súper simple. Crea siguiente script y llamado server.py 
+
+```console
+pip install flask
+```
+
+```python
+from flask_cors import CORS, cross_origin
+from flask import request
+from flask import json
+
+from spanlp.palabrota import Palabrota
+
+app = Flask(__name__)
+cors = CORS(app)
+
+@app.route('/api/v1/nlp/text/censor', methods = ['POST'])
+@cross_origin()
+def censor():
+    try:
+        body = request.json     
+        in_message = body['message']
+        
+        if in_message and len(str(in_message).strip()):
+            palabrota = Palabrota()
+            censored = palabrota.censor(in_message)
+            response = {
+                "success": True,
+                "message": "OK",
+                "error_code": 0,
+                "data": {
+                    'message': in_message,
+                    'censored': censored
+                }
+            }
+            return response
+        else:
+            return {
+                "success": False,
+                "message": "Bad Request - message is required",
+                "error_code": 400,
+                "data": {}
+            }
+    except Exception as e:
+        return {
+            "success": False,
+            "message": "Internal Server Error - "+str(e),
+            "error_code": 500,
+            "data": {}
+        }
+
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=8080, debug=True)
+```
+
+
+```
+python server.py
+```
+
+y listo!! 
+
+
+2. Consume la API desde algun cliente http como Postman, Insomnia y/o SOAP UI. Tambien puedes usar alguna herramientaa como Apache JMeter; o tambien crea una script python con muchos hilos que consuma la API.
+
 
 ### 3. ¿quieres escibrir unit tests y ejecutarlo de forma automática?
 Clona el repositorio en tu maquina, abre el proyecto en tu editor favorito, ve al archivo /spanlp/tests/test_palabrota.py y empieza a escribir tus propios tests unitarios. Escribe cuantos quieras.
