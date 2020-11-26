@@ -259,4 +259,33 @@ Cuentame en ([@jfreddypuentes](https://twitter.com/jfreddypuentes)) ¿qué te pa
 <br>
 <br>
 
-Hecho con ❤️️ de Colombia para el mundo.
+## ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
+A continuación encontrarás algunas pautas para implementar pruebas exitosas que permitarán encontrar posibles errores y mejoras.
+
+### 1. ¿Por donde empezar?
+* Instalar python.
+* Instalar la librería. Esto lo logras ejecutando en la terminal el comando: `pip install -i https://test.pypi.org/simple/ spanlp`
+* Abrete un nuevo script de python, importa la libreria y empieza a experimentar.
+
+### 2. ¿Qué tipos de pruebas puedo realizar?
+Excelente pregunta! no hay limite para la creatividad así que haz todas las pruebas que quieras e imagines. Sin embargo, aquí te dejo algunas pautas:
+
+* **Pruebas de caja negra** => Una vez instales la librería y hayas leido la documentación; Trata de usarla sin preocuparte como funciona o como obtuvo el resultado (Las pruebas no se hacen en base al código, sino a la interfaz); Eso si, valida que la salida o el resultado sea el que esperas. Te puedes guiar (pero no mucho) de las pruebas unitarias que están en: `/spanlp/tests/test_palabrota.py`
+
+* **Pruebas de caja blanca** => Si quieres vez como funciona la libreria, estas pruebas son las tuyas. Intenta entender la estructura, los algoritmos y flujos. Una vez los comprendas, "a dar palo", trata de quebar o romper la lógica, observa y encuentra si hay posibles formas de hacer que falle, prueba diferentes parametros, flujos, tipos de datos. Haz que falle, haz que se ponga lento! y me cuentas. ;)
+
+### 3. ¿quieres escibrir unit tests y ejecutarlo de forma automática?
+Clona el repositorio en tu maquina, abre el proyecto en tu editor favorito, ve al archivo /spanlp/tests/test_palabrota.py y empieza a escribir tus propios tests unitarios. Escribe cuantos quieras.
+Una vez tengas los tests listos, ejecuta el siguiente comando:
+
+```console
+pytest -ra
+```
+
+Esto ejecutará de forma automática todas las pruebas programadas.  Avisame si sale alguno rojo por ahí.
+
+
+
+
+
+>>> print("Hecho con ❤️️ de Colombia para el mundo.")
