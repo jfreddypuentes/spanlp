@@ -259,7 +259,8 @@ Cuentame en ([@jfreddypuentes](https://twitter.com/jfreddypuentes)) ¿qué te pa
 <br>
 <br>
 
-## ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
+## Beta-Testing
+¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
 A continuación encontrarás algunas pautas para implementar pruebas exitosas que permitarán encontrar posibles errores y mejoras.
 
 ### 1. ¿Por donde empezar?
@@ -288,4 +289,4 @@ Esto ejecutará de forma automática todas las pruebas programadas.  Avisame si 
 
 
 
->>> print("Hecho con ❤️️ de Colombia para el mundo.")
+print("Hecho con ❤️️ de Colombia para el mundo.")
