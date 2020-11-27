@@ -1,6 +1,6 @@
 # spanlp
-Libreria para detectar, censurar  y limpiar groserias, vulgaridades, palabras de odio, racismo y xenofobia en textos en Español.
-Puede usar el dataset de cualquir pais de habla hispana.
+Librería para detectar, censurar  y limpiar groserías, vulgaridades, palabras de odio, racismo y xenofobia en textos en Español.
+Puede usar el dataset de cualquier pais de habla hispana.
 
 Incluye:
 1. Argentina
@@ -28,7 +28,7 @@ Incluye:
 ## Casos de uso
 * Censurar vulgaridades en un texto.
 * Detectar y censurar vulgaridades en una sala de chat en linea.
-* Encontrar y censurar frases y palabras de odio, racismo y xenofia.
+* Encontrar y censurar frases y palabras de odio, racismo y xenofia. (Se deben incluir como parámetros)
 * Censurar comentarios groseros o insultos en algún blog o aplicación web o sitio web.
 * Censurar malas palabras en un sistema de recolección de opiniones, sugerencias, quejas y reclamos.
 * Limpiar textos antes de ser publicados.
