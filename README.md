@@ -252,13 +252,6 @@ print(palabrota.censor("Hola huevon marica cómo vamos?"))
 # salida: Hola huevon marica cómo vamos? => No censuró nada.
 ```
 
-## Contacto
-¿Alguna duda? escribeme por email:  [jfredypuentes@gmail.com](mailto:jfredypuentes@gmail.com)
-
-Cuentame en ([@jfreddypuentes](https://twitter.com/jfreddypuentes)) ¿qué te parece está libreria? ¿cómo la estás usando? ¿Qué le mejorarías?
-
-<br>
-<br>
 
 ## Beta-Testing
 ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
@@ -362,8 +355,13 @@ Esto ejecutará de forma automática todas las pruebas programadas.  Avisame si 
 Si encuentras algún problema (por muy mínimo que sea) reportalo [aquí](https://github.com/jfreddypuentes/spanlp/issues/new). Solo necesitarás poner título y describir la falla. 
 
 
+## Contacto
+¿Alguna duda? escribeme por email:  [jfredypuentes@gmail.com](mailto:jfredypuentes@gmail.com)
 
+Cuentame en ([@jfreddypuentes](https://twitter.com/jfreddypuentes)) ¿qué te parece está librería? ¿cómo la estás usando? ¿Qué le mejorarías?
 
+<br>
+<br>
 
 
 **Hecho con ❤️️ de Colombia para el mundo.**
