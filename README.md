@@ -1,6 +1,6 @@
 # spanlp
 Librería para detectar, censurar  y limpiar groserías, vulgaridades, palabras de odio, racismo y xenofobia en textos en Español.
-Puede usar el dataset de cualquier pais de habla hispana.
+Puedes usar la librería aplicada a palabras de cualquier pais de habla hispana.
 
 Incluye:
 1. Argentina
@@ -33,11 +33,13 @@ Incluye:
 * Censurar malas palabras en un sistema de recolección de opiniones, sugerencias, quejas y reclamos.
 * Limpiar textos antes de ser publicados.
 * Detectar y eliminar vulgaridades en textos que serán leidos y/o vistos por niños.
+* Limpiar una base de datos con mucho texto.
 
 ## Instalación
-**Nota:** Esta versión se encuentra en Beta. No la use en producción aun. 
+**Nota:** Esta versión se encuentra en Beta. No la use en producción aún. 
 Te recomiendo que la instales, pruebes y haz doble check sobre los resultados.
-Si encuentra algun problema escribeme. 
+Si encuentras algún problema escribeme o puedes crear un issue [aquí](https://github.com/jfreddypuentes/spanlp/issues/new)
+
 ```console
 pip install -i https://test.pypi.org/simple/ spanlp
 ```
@@ -58,11 +60,11 @@ print(palabrota.contains_palabrota("Hola huevon cómo está?"))
 ```python
 from spanlp.palabrota import Palabrota
 palabrota = Palabrota()
-print(palabrota.contains_palabrota("Hola a todos cómo están?"))
+print(palabrota.contains_palabrota("Hola a todos ¿cómo están?"))
 # salida: False
 ```
 
-Censurar una frase con todo por defecto:
+Censurar una frase con los parámetros por defecto:
 
 ```python
 from spanlp.palabrota import Palabrota
@@ -146,7 +148,7 @@ Estas son las metrcias usadas a la fecha:
 1. [Indice de Jaccard](https://es.wikipedia.org/wiki/%C3%8Dndice_Jaccard) ([Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index))
 2. [Similitud del coseno](https://es.wikipedia.org/wiki/Similitud_coseno) ([Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity))
 
-Próximos release:
+Próximos releases:
 * Hamming...
 * Levenstein...
 * Bag distance...
@@ -167,7 +169,7 @@ print(palabrota.censor("Hola huevo maric cómo está?"))
 
 # salida: Hola huevo ***** cómo está?
 ```
-A pesar de que "maric" no está en el dataset, al algoritmo la censuró dado que por la metrica de distancia es muy similar. 
+A pesar de que "maric" no está en el dataset, al algoritmo la censuró dado que por la métrica de distancia es muy similar. 
 
 
 Censuremos la frase usando **Cosine Similarity** manipulando los parámetros
@@ -260,10 +262,10 @@ A continuación encontrarás algunas pautas para implementar pruebas exitosas qu
 ### 1. ¿Por donde empezar?
 * Instalar python.
 * Instalar la librería. Esto lo logras ejecutando en la terminal el comando: `pip install -i https://test.pypi.org/simple/ spanlp`
-* Abrete un nuevo script de python, importa la libreria y empieza a experimentar.
+* Abre un nuevo script de python, importa la librería y empieza a experimentar.
 
 ### 2. ¿Qué tipos de pruebas puedo realizar?
-Excelente pregunta! no hay limite para la creatividad así que haz todas las pruebas que quieras e imagines. Sin embargo, aquí te dejo algunas pautas:
+Excelente pregunta! no hay limite para la creatividad; Así que haz todas las pruebas que quieras e imagines. Sin embargo, aquí te dejo algunas pautas:
 
 * **Pruebas de caja negra** => Una vez instales la librería y hayas leido la documentación; Trata de usarla sin preocuparte como funciona o como obtuvo el resultado (Las pruebas no se hacen en base al código, sino a la interfaz); Eso si, valida que la salida o el resultado sea el que esperas. Te puedes guiar (pero no mucho) de las pruebas unitarias que están en: `/spanlp/tests/test_palabrota.py`
 
@@ -273,7 +275,7 @@ Excelente pregunta! no hay limite para la creatividad así que haz todas las pru
 
 Sigue estos pasos:
 
-1. Crear una API Rest súper simple. Crea siguiente script y llamado server.py 
+1. Crear una API Rest súper simple. Crea el siguiente script y llámalo `server.py` 
 
 ```console
 pip install flask
@@ -337,22 +339,22 @@ python server.py
 y listo!! 
 
 
-2. Consume la API desde algun cliente http como Postman, Insomnia y/o SOAP UI. Tambien puedes usar alguna herramientaa como Apache JMeter; o tambien crea una script python con muchos hilos que consuma la API.
+2. Consume la API desde algún cliente http como [Postman](https://www.postman.com/), [Insomnia](https://insomnia.rest/download/) y/o [SOAP UI](https://www.soapui.org/). Tambien puedes usar alguna herramienta como [Apache JMeter](https://jmeter.apache.org/); o tambien puedes crear un script python con muchos hilos que consuma la API.
 
 
 ### 3. ¿quieres escibrir unit tests y ejecutarlo de forma automática?
-Clona el repositorio en tu maquina, abre el proyecto en tu editor favorito, ve al archivo /spanlp/tests/test_palabrota.py y empieza a escribir tus propios tests unitarios. Escribe cuantos quieras.
-Una vez tengas los tests listos, ejecuta el siguiente comando:
+Clona el repositorio en tu máquina, abre el proyecto en tu editor favorito, ve al archivo `/spanlp/tests/test_palabrota.py` y empieza a escribir tus propios tests unitarios. Escribe cuantos quieras.
+Una vez tengas los tests listos, ejecuta el siguiente comando en la raiz del proyecto (`/spanlp/`):
 
 ```console
 pytest -ra
 ```
 
-Esto ejecutará de forma automática todas las pruebas programadas.  Avisame si sale alguno rojo por ahí.
+Esto ejecutará de forma automática todas las pruebas programadas e indicará si algun test falló.
 
 
-## ¿Cómo reportar un Bug?
-Si encuentras algún problema (por muy mínimo que sea) reportalo [aquí](https://github.com/jfreddypuentes/spanlp/issues/new). Solo necesitarás poner título y describir la falla. 
+## ¿Cómo reportar un bug/falla/error?
+Si encuentras algún problema (por muy mínimo que sea) reportalo [aquí](https://github.com/jfreddypuentes/spanlp/issues/new). Solo necesitarás poner título y describir la falla y aportará un montón a que este proyecto mejore su calidad.
 
 
 ## Contacto
