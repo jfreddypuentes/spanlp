@@ -1,6 +1,6 @@
 # spanlp
-Librería para detectar, censurar  y limpiar groserías, vulgaridades, palabras de odio, racismo y xenofobia en textos en Español.
-Puedes usar la librería aplicada a palabras de cualquier pais de habla hispana.
+spanlp es una librería escrita en Python para detectar, censurar  y limpiar groserías, vulgaridades, palabras de odio, racismo y xenofobia en textos en **Español**.
+Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
 
 Incluye:
 1. Argentina
@@ -255,7 +255,7 @@ print(palabrota.censor("Hola huevon marica cómo vamos?"))
 ```
 
 
-## Beta-Testing
+## Beta Testing
 ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
 A continuación encontrarás algunas pautas para implementar pruebas exitosas que permitarán encontrar posibles errores y mejoras.
 
