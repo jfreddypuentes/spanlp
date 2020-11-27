@@ -39,7 +39,7 @@ Incluye:
 Te recomiendo que la instales, pruebes y haz doble check sobre los resultados.
 Si encuentra algun problema escribeme. 
 ```console
-pip install -i https://test.pypi.org/simple/ spanlp==0.0.4
+pip install -i https://test.pypi.org/simple/ spanlp
 ```
 
 ## ¿Cómo funciona?
