@@ -358,6 +358,11 @@ pytest -ra
 Esto ejecutará de forma automática todas las pruebas programadas.  Avisame si sale alguno rojo por ahí.
 
 
+## ¿Cómo reportar un Bug?
+Si encuentras algún problema (por muy mínimo que sea) reportalo [aquí](https://github.com/jfreddypuentes/spanlp/issues/new). Solo necesitarás poner título y describir la falla. 
+
+
+
 
 
 
