@@ -8,7 +8,19 @@
   <br>
   
   <p align="center">
-    <img src="https://img.shields.io/badge/version-v0.0.4-green"/>
+    <a href="https://test.pypi.org/project/spanlp/">
+      <img src="https://img.shields.io/badge/version-v0.0.4-green"/>
+    </a>
+    <a href="https://test.pypi.org/project/spanlp/">
+      <img src="https://img.shields.io/badge/status-beta--stable-blue"/>
+    </a>
+  <a href="https://test.pypi.org/project/spanlp/">
+      <img src="https://img.shields.io/badge/release-v0.0.4-brightgreen"/>
+    </a>
+    <a href="https://test.pypi.org/project/spanlp/">
+      <img src="https://img.shields.io/badge/test--pypi-v0.0.4-yellow"/>
+    </a>
+  
   </p> 
   
 </p>
