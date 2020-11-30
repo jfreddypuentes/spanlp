@@ -20,9 +20,11 @@
     <a href="https://test.pypi.org/project/spanlp/">
       <img src="https://img.shields.io/badge/test--pypi-v0.0.4-yellow"/>
     </a>
+  </p>
   
-  </p> 
-  
+  <p align="center">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jfreddypuentes/spanlp?style=social">
+  </p>
 </p>
 
 <hr>
