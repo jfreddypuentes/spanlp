@@ -6,6 +6,11 @@
       vulgaridades, palabras de odio, racismo, xenofobia y bullying en textos en <strong>Español</strong>.
     </i>
   <br>
+  
+  <p align="center">
+    <img src="https://img.shields.io/badge/version-v0.0.4-green"/>
+  </p> 
+  
 </p>
 
 <br>
