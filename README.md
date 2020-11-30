@@ -29,9 +29,9 @@
 
 ## Indice
 - [Indice](#indice)
-- [Documentación](#documentacion)
+- [Documentación](#documentación)
 - [Casos de uso](#casos-de-uso)
-- [Instalación](#instalacinn)
+- [Instalación](#instalación)
 - [Funcionamiento](#funcionamiento)
   - [Uso básico](#uso-basico)
   - [Uso avanzado](#uso-avanzado)
