@@ -1,6 +1,14 @@
 <h1 align="center">spanlp</h1>
 
-spanlp es una librería escrita en Python para detectar, censurar  y limpiar groserías, vulgaridades, palabras de odio, racismo, xenofobia y bullying en textos en **Español**.
+<p align="center">
+  <br>
+  <i>spanlp es una librería escrita en Python para detectar, censurar  y limpiar groserías, <br>
+      vulgaridades, palabras de odio, racismo, xenofobia y bullying en textos en <strong>Español</strong>.
+    </i>
+  <br>
+</p>
+
+
 Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
 
 Incluye:
