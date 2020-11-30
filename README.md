@@ -27,6 +27,20 @@
 
 <hr>
 
+## Indice
+- [Indice](#indice)
+- [Documentación](#documentacion)
+- [Casos de uso](#casos-de-uso)
+- [Instalación](#instalacinn)
+- [Funcionamiento](#funcionamiento)
+  - [Uso básico](#uso-basico)
+  - [Uso avanzado](#uso-avanzado)
+- [Beta Testing](#beta-testing)
+- [Reportar un bug](#reportar-un-bug)
+- [Contacto](#contacto)
+
+<hr>
+
 ## 📖 Documentación 
 Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
 
@@ -72,7 +86,7 @@ Si encuentras algún problema escribeme o puedes crear un issue [aquí](https://
 pip install -i https://test.pypi.org/simple/ spanlp
 ```
 
-## ¿Cómo funciona?
+## Funcionamiento
 Los algoritmos y modulos se personalizan de forma dinámica y muy flexible. Veamos algunos usos.
 
 ### Uso básico
@@ -381,7 +395,7 @@ pytest -ra
 Esto ejecutará de forma automática todas las pruebas programadas e indicará si algun test falló.
 
 
-## ¿Cómo reportar un bug/falla/error?
+## Reportar un bug
 Si encuentras algún problema (por muy mínimo que sea) reportalo [aquí](https://github.com/jfreddypuentes/spanlp/issues/new). Solo necesitarás poner título y describir la falla y aportará un montón a que este proyecto mejore su calidad.
 
 
