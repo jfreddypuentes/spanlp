@@ -29,7 +29,7 @@
 
 ## Indice
 - [Indice](#indice)
-- [Documentación](#documentación)
+- [Sobre la librería](#sobre-esta-libreria)
 - [Casos de uso](#casos-de-uso)
 - [Instalación](#instalación)
 - [Funcionamiento](#funcionamiento)
@@ -41,8 +41,8 @@
 
 <hr>
 
-## Documentación 
-Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
+## Sobre esta librería 
+spanlp es una librería escrita en Python para detección de groserías, vulgaridades, palabras de odio, racismo, xenofobia y bullying en textos escritos en Español. Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
 
 Incluye:
 1. Argentina 🇦🇷
