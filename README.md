@@ -29,7 +29,7 @@
 
 ## Indice
 - [Indice](#indice)
-- [Sobre la librería](#sobre-esta-libreria)
+- [Sobre la librería](#sobre-la-libreria)
 - [Casos de uso](#casos-de-uso)
 - [Instalación](#instalación)
 - [Funcionamiento](#funcionamiento)
@@ -41,7 +41,7 @@
 
 <hr>
 
-## Sobre esta librería 
+## Sobre la librería
 spanlp es una librería escrita en Python para detección de groserías, vulgaridades, palabras de odio, racismo, xenofobia y bullying en textos escritos en Español. Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
 
 Incluye:
