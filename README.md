@@ -1,34 +1,34 @@
 # spanlp
-spanlp es una librería escrita en Python para detectar, censurar  y limpiar groserías, vulgaridades, palabras de odio, racismo y xenofobia en textos en **Español**.
+spanlp es una librería escrita en Python para detectar, censurar  y limpiar groserías, vulgaridades, palabras de odio, racismo, xenofobia y bullying en textos en **Español**.
 Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
 
 Incluye:
-1. Argentina
-2. Bolivia
-3. Chile
-4. Colombia
-5. Costa Rica
-6. Cuba
-7. Ecuador
-8. El Salvador
-9. España
-10. Guatemala
-11. Guinea Ecuatorial
-12. Honduras
-13. Mexico
-14. Nicaragua
-15. Panamá
-16. Paraguay
-17. Perú
-18. Puerto Rico
-19. Dominicana
-20. Uruguay
-21. Venezuela
+1. Argentina 🇦🇷
+2. Bolivia 🇧🇴
+3. Chile 🇨🇱
+4. Colombia 🇨🇴
+5. Costa Rica 🇨🇷
+6. Cuba 🇨🇺
+7. Ecuador 🇪🇨
+8. El Salvador 🇸🇻
+9. España 🇪🇸
+10. Guatemala 🇬🇹
+11. Guinea Ecuatorial 🇬🇶
+12. Honduras 🇭🇳
+13. México 🇲🇽
+14. Nicaragua 🇳🇮
+15. Panamá 🇵🇦
+16. Paraguay 🇵🇾
+17. Perú 🇵🇪
+18. Puerto Rico 🇵🇷
+19. República Dominicana 🇩🇴
+20. Uruguay 🇺🇾
+21. Venezuela 🇻🇪
 
 ## Casos de uso
 * Censurar vulgaridades en un texto.
 * Detectar y censurar vulgaridades en una sala de chat en linea.
-* Encontrar y censurar frases y palabras de odio, racismo y xenofia. (Se deben incluir como parámetros)
+* Encontrar y censurar frases y palabras de odio, racismo, xenofia, bullying. (Se deben incluir como parámetros)
 * Censurar comentarios groseros o insultos en algún blog o aplicación web o sitio web.
 * Censurar malas palabras en un sistema de recolección de opiniones, sugerencias, quejas y reclamos.
 * Limpiar textos antes de ser publicados.
