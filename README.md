@@ -41,7 +41,7 @@
 
 <hr>
 
-## 📖 Documentación 
+## Documentación 
 Puedes usar la librería y aplicarla a palabras de cualquiera de los más de **20 paises** de habla hispana.
 
 Incluye:
