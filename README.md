@@ -29,7 +29,7 @@
 
 ## Indice
 - [Indice](#indice)
-- [Sobre la librería](#sobre-la-libreria)
+- [Sobre la librería](#sobre-la-librería)
 - [Casos de uso](#casos-de-uso)
 - [Instalación](#instalación)
 - [Funcionamiento](#funcionamiento)
