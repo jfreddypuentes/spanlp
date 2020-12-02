@@ -33,6 +33,7 @@
 - [Indice](#indice)
 - [Sobre la librería](#sobre-la-librería)
 - [Casos de uso](#casos-de-uso)
+- [Status Desarrollo](#status-desarrollo)
 - [Instalación](#instalación)
 - [Funcionamiento](#funcionamiento)
   - [Uso básico](#uso-basico)
@@ -78,6 +79,13 @@ Incluye:
 * Limpiar textos antes de ser publicados.
 * Detectar y eliminar vulgaridades en textos que serán leidos y/o vistos por niños.
 * Limpiar una base de datos con mucho texto.
+
+## Status Desarrollo
+
+| Funcionalidad                     | Desarrollo |   Pruebas   |
+|-----------------------------------|------------|-------------|
+| Soporte de tokens con números     |     ✓      | En progreso |
+| Estrategias de limpieza de datos  |     ✓      | En progreso |
 
 ## Instalación
 **Nota:** Esta versión se encuentra en Beta. No la use en producción aún. 
