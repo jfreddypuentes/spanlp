@@ -82,10 +82,10 @@ Incluye:
 
 ## Status Desarrollo
 
-| Funcionalidad                     | Desarrollo |   Pruebas   |
-|-----------------------------------|------------|-------------|
-| Soporte de tokens con números     |     ✓      | En progreso |
-| Estrategias de limpieza de datos  |     ✓      | En progreso |
+| Funcionalidad                     | Desarrollo |   Pruebas   | Release  |
+|-----------------------------------|------------|-------------|-----------
+| Soporte de tokens con números     |     ✓      | En progreso | v0.0.5   |  
+| Estrategias de limpieza de datos  |     ✓      | En progreso | v0.0.5   |
 
 ## Instalación
 **Nota:** Esta versión se encuentra en Beta. No la use en producción aún. 
