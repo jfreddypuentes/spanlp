@@ -27,7 +27,7 @@
   </p>
 </p>
 
-⚡⚡ **Nuevo Release v0.0.05 ** Implementación de algoritmo de limpieza y pre-procesamiento de datos ⚡⚡
+⚡⚡ **Nuevo Release v0.0.05** ⚡⚡ Implementación de algoritmo de limpieza y pre-procesamiento de datos
 
 <hr>
 
