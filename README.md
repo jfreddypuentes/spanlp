@@ -38,6 +38,7 @@
 - [Funcionamiento](#funcionamiento)
   - [Uso básico](#uso-basico)
   - [Uso avanzado](#uso-avanzado)
+  - [Pre-procesamiento de datos](#preprocesamiento-de-texto)
 - [Beta Testing](#beta-testing)
 - [Reportar un bug](#reportar-un-bug)
 - [Contacto](#contacto)
@@ -306,6 +307,57 @@ print(palabrota.censor("Hola huevon marica cómo vamos?"))
 # salida: Hola huevon marica cómo vamos? => No censuró nada.
 ```
 
+## Preprocesamiento de texto
+Siempre será necesario limpiar los datos antes de empezar a trabajar. Aqui te presento la clase `Preprocessing` y algunas de las 28 estratégias de limpieza de datos.
+
+Esta nueva clase implementa de manera flexible y dinámica cualquier estrategia de limpieaza de una manera muy simple. Veamos ejemplos:
+
+
+```python
+from spanlp.domain.strategies import Preprocessing, TextToLower
+
+strategies = [TextToLower()] # Defino mis estrategias de limpieza o pre-procesamiento
+data = "ESTARE EN MINUSCULA" # Tengo mis datos
+result = Preprocessing(data=data, clean_strategies=strategies).clean() # Invoco a Preprocessing
+print(result)
+
+# salida: estare en minuscula
+```
+
+Tambien se puede así:
+```python
+from spanlp.domain.strategies import Preprocessing, TextToLower
+
+strategies = [TextToLower()]
+data = "ESTARE EN MINUSCULA" 
+result = Preprocessing().clean(data=data, clean_strategies=strategies) # Envio los datos y las estragias al clean()
+print(result)
+
+# salida: estare en minuscula
+```
+
+Y tambien así:
+```python
+from spanlp.domain.strategies import Preprocessing, TextToLower
+
+strategies = [TextToLower()]
+data = "ESTARE EN MINUSCULA"
+preprocessor = Preprocessing(data=data, clean_strategies=strategies)
+result = preprocessor.clean()
+print(result)
+
+# salida: estare en minuscula
+```
+
+Y así:
+```python
+from spanlp.domain.strategies import Preprocessing, TextToLower
+
+result = Preprocessing(data="ESTARE EN MINUSCULA", clean_strategies=[TextToLower()]).clean()
+print(result)
+
+# salida: estare en minuscula
+```
 
 ## Beta Testing
 ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
