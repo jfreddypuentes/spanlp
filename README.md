@@ -27,7 +27,7 @@
   </p>
 </p>
 
-⚡⚡ **Nuevo Release v0.0.05** ⚡⚡ Implementación de algoritmos de limpieza y pre-procesamiento de datos
+⚡⚡ **Nuevo Release v0.0.05** ⚡⚡ Implementación de 28 algoritmos de limpieza y pre-procesamiento de datos
 
 <hr>
 
@@ -40,7 +40,7 @@
 - [Funcionamiento](#funcionamiento)
   - [Uso básico](#uso-basico)
   - [Uso avanzado](#uso-avanzado)
-  - [Pre-procesamiento de datos](#preprocesamiento-de-texto) ⚡⚡ **Nuevo** ⚡⚡
+  - [Pre-procesamiento de datos](#preprocesamiento-de-texto) ⚡⚡ **Nuevo v0.0.5** ⚡⚡
 - [Beta Testing](#beta-testing)
 - [Reportar un bug](#reportar-un-bug)
 - [Contacto](#contacto)
