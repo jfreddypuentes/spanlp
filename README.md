@@ -9,16 +9,16 @@
   
   <p align="center">
     <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/version-v0.0.4-green"/>
+      <img src="https://img.shields.io/badge/version-v0.0.5-green"/>
     </a>
     <a href="https://test.pypi.org/project/spanlp/">
       <img src="https://img.shields.io/badge/status-beta--stable-blue"/>
     </a>
   <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/release-v0.0.4-brightgreen"/>
+      <img src="https://img.shields.io/badge/release-v0.0.5-brightgreen"/>
     </a>
     <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/test--pypi-v0.0.4-yellow"/>
+      <img src="https://img.shields.io/badge/test--pypi-v0.0.5-yellow"/>
     </a>
   </p>
   
@@ -26,6 +26,8 @@
     <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jfreddypuentes/spanlp?style=social">
   </p>
 </p>
+
+⚡⚡ **Nuevo Release v0.0.05 ** Implementación de algoritmo de limpieza y pre-procesamiento de datos ⚡⚡
 
 <hr>
 
@@ -38,7 +40,7 @@
 - [Funcionamiento](#funcionamiento)
   - [Uso básico](#uso-basico)
   - [Uso avanzado](#uso-avanzado)
-  - [Pre-procesamiento de datos](#preprocesamiento-de-texto)
+  - [Pre-procesamiento de datos](#preprocesamiento-de-texto) ⚡⚡ **Nuevo** ⚡⚡
 - [Beta Testing](#beta-testing)
 - [Reportar un bug](#reportar-un-bug)
 - [Contacto](#contacto)
@@ -85,8 +87,8 @@ Incluye:
 
 | Funcionalidad                     | Desarrollo |   Pruebas   | Release  |
 |-----------------------------------|------------|-------------|-----------
-| Soporte de tokens con números     |     ✓      | En progreso | v0.0.5   |  
-| Estrategias de limpieza de datos  |     ✓      | En progreso | v0.0.5   |
+| Soporte de tokens con números     |     ✓      |     OK      | v0.0.5   |  
+| Estrategias de limpieza de datos  |     ✓      |     OK.     | v0.0.5   |
 
 ## Instalación
 **Nota:** Esta versión se encuentra en Beta. No la use en producción aún. 
