@@ -316,34 +316,34 @@ Siempre será necesario limpiar los datos antes de empezar a trabajar. Aqui te p
 
 Son 28 algoritmos y son:
 
-1.`TextToLower`
-2.`TextToUpper`
-3.`RemoveUnicodeCharacters`
-4.`NumbersToVowelsInLowerCase`
-5.`NumbersToVowelsInUpperCase`
-6.`NumbersToConsonantsInLowerCase`
-7.`NumbersToConsonantsInUpperCase`
-8.`RemoveExtraSpaces`
-9.`RemoveUserMentions`
-10.`RemoveUrls`
-11.`RemoveHashtags`
-12.`RemoveTicks`
-13.`RemoveBackTicks`
-14.`RemovePunctuation`
-15.`RemoveNumbers`
-16.`RemoveAccents`
-17.`RemoveStopWords`
-18.`RemoveArticles`
-19.`RemoveEmoticons`
-20.`RemovePronouns`
-21.`RemoveAdverbs`
-22.`RemoveConjunctions`
-23.`RemovePrepositions`
-24.`RemoveAdjectives`
-25.`RemoveHtmlTags`
-26.`RemoveEmailAddress`
-27.`ExpandAbbreviations`
-28.`RemoveAbbreviations`
+1. `TextToLower`
+2. `TextToUpper`
+3. `RemoveUnicodeCharacters`
+4. `NumbersToVowelsInLowerCase`
+5. `NumbersToVowelsInUpperCase`
+6. `NumbersToConsonantsInLowerCase`
+7. `NumbersToConsonantsInUpperCase`
+8. `RemoveExtraSpaces`
+9. `RemoveUserMentions`
+10. `RemoveUrls`
+11. `RemoveHashtags`
+12. `RemoveTicks`
+13. `RemoveBackTicks`
+14. `RemovePunctuation`
+15. `RemoveNumbers`
+16. `RemoveAccents`
+17. `RemoveStopWords`
+18. `RemoveArticles`
+19. `RemoveEmoticons`
+20. `RemovePronouns`
+21. `RemoveAdverbs`
+22. `RemoveConjunctions`
+23. `RemovePrepositions`
+24. `RemoveAdjectives`
+25. `RemoveHtmlTags`
+26. `RemoveEmailAddress`
+27. `ExpandAbbreviations`
+28. `RemoveAbbreviations`
 
 
 La nueva clase `Preprocessing` implementa de manera flexible y dinámica cualquier estrategia de limpieza de una manera muy simple. Se puede aplicar dentro de una metrica de distancia como `JaccardIndex` o `CosineSimilarity` para darle más poder a la busqueda, dismunir el riesgo de no encontrar las palabras a censurar y aumentar la posibilidad de censurar las palabras que son por el hecho de estar limpias.
@@ -397,7 +397,7 @@ print(result)
 # salida: estare en minuscula
 ```
 
-**¿Cómo aplico una estrategia para que pre-preprocese mis datos dentro de la metrica de distancia?**
+**¿Cómo aplico una estrategia para que pre-preprocese mis datos dentro de la métrica de distancia?**
 
 
 Aplicar la metrica de distancia con una estrategia de pre-procesado:
@@ -427,6 +427,22 @@ print(result)
 # salida: hola me voy a normalizar a minuscula
 ```
 
+**Usar varias estrategias de limpieza de datos**
+Nota: Las estrategias se ejecutan en el orden enviado en la lista. Recomiendo analizar primero como desea que funcione: Si primero elimina espacios extras y despues elimina signos de puntuación y luego stop words etc.. esto dependerá de su necesidad concreta; Por lo que se pueden obtener diferentes resultados si cambia el orden de las estrategias.
+
+Enviando varias estrategias para limpiar mis datos:
+
+```python
+from spanlp.domain.strategies import Preprocessing, TextToLower, RemoveUserMentions, RemovePunctuation
+
+strategies = [RemoveUserMentions(), TextToLower(), RemovePunctuation()]
+tweet = "Hola @jhon, si viste que @freddy va a lanzar una nueva libreria Python para NLP?"
+cleaned = Preprocessing().clean(data=tweet, clean_strategies=strategies)
+
+print(cleaned)
+
+#salida: hola  si viste que  va a lanzar una nueva libreria python para nlp
+```
 
 
 ## Beta Testing
