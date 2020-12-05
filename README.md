@@ -310,10 +310,46 @@ print(palabrota.censor("Hola huevon marica cómo vamos?"))
 ```
 
 ## Preprocesamiento de texto
-Siempre será necesario limpiar los datos antes de empezar a trabajar. Aqui te presento la clase `Preprocessing` y algunas de las 28 estratégias de limpieza de datos.
+Siempre será necesario limpiar los datos antes de empezar a trabajar. Aqui te presento la clase `Preprocessing` y las 28 estratégias de limpieza de datos.
 
-Esta nueva clase implementa de manera flexible y dinámica cualquier estrategia de limpieaza de una manera muy simple. Veamos ejemplos:
+¿Cuantas estrategias hay y cuales son?
 
+Son 28 algoritmos y son:
+
+1.`TextToLower`
+2.`TextToUpper`
+3.`RemoveUnicodeCharacters`
+4.`NumbersToVowelsInLowerCase`
+5.`NumbersToVowelsInUpperCase`
+6.`NumbersToConsonantsInLowerCase`
+7.`NumbersToConsonantsInUpperCase`
+8.`RemoveExtraSpaces`
+9.`RemoveUserMentions`
+10.`RemoveUrls`
+11.`RemoveHashtags`
+12.`RemoveTicks`
+13.`RemoveBackTicks`
+14.`RemovePunctuation`
+15.`RemoveNumbers`
+16.`RemoveAccents`
+17.`RemoveStopWords`
+18.`RemoveArticles`
+19.`RemoveEmoticons`
+20.`RemovePronouns`
+21.`RemoveAdverbs`
+22.`RemoveConjunctions`
+23.`RemovePrepositions`
+24.`RemoveAdjectives`
+25.`RemoveHtmlTags`
+26.`RemoveEmailAddress`
+27.`ExpandAbbreviations`
+28.`RemoveAbbreviations`
+
+
+La nueva clase `Preprocessing` implementa de manera flexible y dinámica cualquier estrategia de limpieza de una manera muy simple. Se puede aplicar dentro de una metrica de distancia como `JaccardIndex` o `CosineSimilarity` para darle más poder a la busqueda, dismunir el riesgo de no encontrar las palabras a censurar y aumentar la posibilidad de censurar las palabras que son por el hecho de estar limpias.
+
+
+Veamos algunos ejemplos:
 
 ```python
 from spanlp.domain.strategies import Preprocessing, TextToLower
@@ -360,6 +396,7 @@ print(result)
 
 # salida: estare en minuscula
 ```
+
 
 ## Beta Testing
 ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
