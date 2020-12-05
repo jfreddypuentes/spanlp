@@ -397,6 +397,37 @@ print(result)
 # salida: estare en minuscula
 ```
 
+**¿Cómo aplico una estrategia para que pre-preprocese mis datos dentro de la metrica de distancia?**
+
+
+Aplicar la metrica de distancia con una estrategia de pre-procesado:
+```python
+from spanlp.domain.strategies import JaccardIndex, TextToLower
+
+strategies = [TextToLower()]
+jaccard_index = JaccardIndex(normalize=True, clean_strategies=strategies)
+result = jaccard_index.calculate("HOLA", "hola")
+
+print(result)
+
+# salida: 1
+```
+
+Usar la métrica como interface para ejecutar la estrategia:
+
+```python
+from spanlp.domain.strategies import JaccardIndex, TextToLower
+
+strategies = [TextToLower()]
+jaccard_index = JaccardIndex(normalize=True, clean_strategies=strategies)
+result = jaccard_index.normalize("HOLA ME VOY A NORMALIZAR A MINUSCULA")
+
+print(result)
+
+# salida: hola me voy a normalizar a minuscula
+```
+
+
 
 ## Beta Testing
 ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
