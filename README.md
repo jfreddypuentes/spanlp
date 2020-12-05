@@ -444,6 +444,20 @@ print(cleaned)
 #salida: hola  si viste que  va a lanzar una nueva libreria python para nlp
 ```
 
+**Limpiemos emoticones, pronombres y pasemos a minuscula**
+
+```python
+from spanlp.domain.strategies import Preprocessing, RemoveEmoticons, TextToLower, RemovePronouns
+
+strategies = [RemoveEmoticons(), TextToLower(), RemovePronouns()]
+message = "Segun ella Los emoticones <3 :) :D ;) son muy usados y esta rosa tambien @}->--"
+cleaned = Preprocessing().clean(data=message, clean_strategies=strategies)
+
+print(cleaned)
+
+# salida: segun los emoticones son muy usados y esta rosa tambien
+```
+
 
 ## Beta Testing
 ¿Eres betatester? ¿quieres automatizar pruebas? o ¿simplemente aprender del open source y de las pruebas? Aventurate ya y ayudame a mejorar este proyecto!
