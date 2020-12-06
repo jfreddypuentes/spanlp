@@ -567,6 +567,9 @@ Si encuentras algún problema (por muy mínimo que sea) reportalo [aquí](https:
 Cuentame en ([@jfreddypuentes](https://twitter.com/jfreddypuentes)) ¿qué te parece está librería? ¿cómo la estás usando? ¿Qué le mejorarías?
 
 <br>
+## Constribuciones
+* [@vivianamarquez](https://github.com/vivianamarquez) on Github, [@vivmarquez](https://twitter.com/vivmarquez) on Twitter
+* [@normacalamartinez](https://github.com/normacalamartinez) on Github
 <br>
 
 
