@@ -43,7 +43,7 @@
   - [Pre-procesamiento de datos](#preprocesamiento-de-texto) ⚡⚡ **Nuevo v0.0.5** ⚡⚡
 - [Beta Testing](#beta-testing)
 - [Reportar un bug](#reportar-un-bug)
-- [Contribuidores](#contribuidorxs)
+- [Contribuidorxs](#contribuidorxs)
 - [Contacto](#contacto)
 
 <hr>
