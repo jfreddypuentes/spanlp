@@ -319,7 +319,7 @@ Son 28 algoritmos y son:
 
 1. `TextToLower` **input**: "HOLA QUE MÁS?" **output:** "hola que más?"
 2. `TextToUpper` **input:** "hola ¿cómo están?" **output:** "HOLA ¿CÓMO ESTÁN?"
-3. `RemoveUnicodeCharacters` **input:** "hola çcomo ªvan?" **output:** "hola como van"  [Unicode characters](https://www.rapidtables.com/code/text/unicode-characters.html)
+3. `RemoveUnicodeCharacters` **input:** "hola çcomo ªvan?" **output:** "hola como van"  ([Unicode characters](https://www.rapidtables.com/code/text/unicode-characters.html))
 4. `NumbersToVowelsInLowerCase` **input:** "h0l4 qu3 t4l?" **ouput:** "hola que tal?"
 5. `NumbersToVowelsInUpperCase` **input:** "H0l4 c0m0 v4n?" **output:** "HOlA cOmO vAn?"
 6. `NumbersToConsonantsInLowerCase` **input:** "C0m0 e574n? 8i3n?" **output:** "Como estan? bien?"
