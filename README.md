@@ -317,8 +317,8 @@ Siempre será necesario limpiar los datos antes de empezar a trabajar. Aqui te p
 
 Son 28 algoritmos y son:
 
-1. `TextToLower`
-2. `TextToUpper`
+1. `TextToLower` input: "HOLA QUE MÁS?" output: "hola que más?"
+2. `TextToUpper` input: 
 3. `RemoveUnicodeCharacters`
 4. `NumbersToVowelsInLowerCase`
 5. `NumbersToVowelsInUpperCase`
@@ -570,8 +570,8 @@ Cuentame en ([@jfreddypuentes](https://twitter.com/jfreddypuentes)) ¿qué te pa
 <br>
 
 ## Contribuidorxs
-* [@vivianamarquez](https://github.com/vivianamarquez) en Github, [@vivmarquez](https://twitter.com/vivmarquez) en Twitter
-* [@normacalamartinez](https://github.com/normacalamartinez) en Github
+* [@vivianamarquez](https://github.com/vivianamarquez) en Github, [@vivmarquez](https://twitter.com/vivmarquez) en Twitter - Contribución al diseño y funcionalidades de la librería.
+* [@normacalamartinez](https://github.com/normacalamartinez) en Github - Contribución al dataset de vulgaridades por país de habla hispana.
 
 <br>
 
