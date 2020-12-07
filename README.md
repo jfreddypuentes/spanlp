@@ -318,12 +318,12 @@ Siempre será necesario limpiar los datos antes de empezar a trabajar. Aqui te p
 Son 28 algoritmos y son:
 
 1. `TextToLower` input: "HOLA QUE MÁS?" output: "hola que más?"
-2. `TextToUpper` input: 
-3. `RemoveUnicodeCharacters`
-4. `NumbersToVowelsInLowerCase`
-5. `NumbersToVowelsInUpperCase`
-6. `NumbersToConsonantsInLowerCase`
-7. `NumbersToConsonantsInUpperCase`
+2. `TextToUpper` input: "hola ¿cómo están?" output: "HOLA ¿CÓMO ESTÁN?"
+3. `RemoveUnicodeCharacters` input: "hola çcomo ªvan?" output: "hola como van?"
+4. `NumbersToVowelsInLowerCase` input: "h0l4 qu3 t4l?" ouput: "hola que tal?"
+5. `NumbersToVowelsInUpperCase` input: "H0l4 c0m0 v4n?" output: "HOlA cOmO vAn?"
+6. `NumbersToConsonantsInLowerCase` input: "C0m0 e574n? 8i3n?" ouput: "Como estan? bien?"
+7. `NumbersToConsonantsInUpperCase` input: "C0m0 e574n? 8i3n?" ouput: "COMO ESTAN? BIEN?"
 8. `RemoveExtraSpaces`
 9. `RemoveUserMentions`
 10. `RemoveUrls`
