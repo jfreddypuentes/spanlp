@@ -570,8 +570,8 @@ Cuentame en ([@jfreddypuentes](https://twitter.com/jfreddypuentes)) ¿qué te pa
 <br>
 
 ## Contribuidorxs
-* [@vivianamarquez](https://github.com/vivianamarquez) en Github, [@vivmarquez](https://twitter.com/vivmarquez) en Twitter - Contribución al diseño y funcionalidades de la librería.
-* [@normacalamartinez](https://github.com/normacalamartinez) en Github - Contribución al dataset de vulgaridades por país de habla hispana.
+* [@vivianamarquez](https://github.com/vivianamarquez) en Github, [@vivmarquez](https://twitter.com/vivmarquez) en Twitter (Data Scientist) - Contribución al diseño y funcionalidades de la librería.
+* [@normacalamartinez](https://github.com/normacalamartinez) en Github (BI Developer) - Contribución al dataset de vulgaridades por país de habla hispana.
 
 <br>
 
