@@ -90,6 +90,14 @@ Incluye:
 |-----------------------------------|------------|-------------|-----------
 | Soporte de tokens con números     |     ✓      |     OK      | v0.0.5   |  
 | Estrategias de limpieza de datos  |     ✓      |     OK.     | v0.0.5   |
+| Hamming                           |  Progreso  |             |    -     |
+| Levenstein                        |     -      |             |    -     |
+| Bag distance                      |     -      |             |    -     |
+| Sorensen-Dice coefficient         |     -      |             |    -     |
+| Tversky index                     |     -      |             |    -     |
+| Overlap index                     |     -      |             |    -     |
+| Tanimoto distance                 |     -      |             |    -     |
+
 
 ## Instalación
 **Nota:** Esta versión se encuentra en Beta. No la use en producción aún. 
@@ -203,15 +211,6 @@ El uso avanzado incluye usar metricas de distancia y similitud para encontrar, c
 Estas son las metrcias usadas a la fecha:
 1. [Indice de Jaccard](https://es.wikipedia.org/wiki/%C3%8Dndice_Jaccard) ([Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index))
 2. [Similitud del coseno](https://es.wikipedia.org/wiki/Similitud_coseno) ([Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity))
-
-Próximos releases:
-* Hamming...
-* Levenstein...
-* Bag distance...
-* Sorensen-Dice coefficient...
-* Tversky index...
-* Overlap index...
-* Tanimoto distance...
 
 
 Censuremos la frase usando Cosine Similarity 
