@@ -325,7 +325,7 @@ Son 28 algoritmos y son:
 7. `NumbersToConsonantsInUpperCase` **input:** "C0m0 e574n? 8i3n?" **output:** "COMO ESTAN? BIEN?"
 8. `RemoveExtraSpaces` **input:** "Hola   como están?   " **output:** "Hola como están?"
 9. `RemoveUserMentions` **input:** "Hola @channel como van?" **output:** "CHola como van?"
-10. `RemoveUrls`  **input:** "Revisen este recurso https://www.algo.com" **output:** "Revisen este recurso "
+10. `RemoveUrls`  **input:** "Revisen este recurso https://github.com/jfreddypuentes/spanlp" **output:** "Revisen este recurso "
 11. `RemoveHashtags` **input:** "Hola #equipo bienvenidos" **output:** "Hola  bienvenidos"
 12. `RemoveTicks` **input:** "Hola, que' más'" **output:** "Hola, que más"
 13. `RemoveBackTicks` **input:** "Hola, que` más`" **output:** "Hola, que más"
