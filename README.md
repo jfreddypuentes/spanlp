@@ -323,20 +323,20 @@ Son 28 algoritmos y son:
 5. `NumbersToVowelsInUpperCase` **input:** "H0l4 c0m0 v4n?" **output:** "HOlA cOmO vAn?"
 6. `NumbersToConsonantsInLowerCase` **input:** "C0m0 e574n? 8i3n?" **output:** "Como estan? bien?"
 7. `NumbersToConsonantsInUpperCase` **input:** "C0m0 e574n? 8i3n?" **output:** "COMO ESTAN? BIEN?"
-8. `RemoveExtraSpaces`
-9. `RemoveUserMentions`
-10. `RemoveUrls`
-11. `RemoveHashtags`
-12. `RemoveTicks`
-13. `RemoveBackTicks`
-14. `RemovePunctuation`
-15. `RemoveNumbers`
-16. `RemoveAccents`
-17. `RemoveStopWords`
-18. `RemoveArticles`
-19. `RemoveEmoticons`
-20. `RemovePronouns`
-21. `RemoveAdverbs`
+8. `RemoveExtraSpaces` **input:** "Hola   como están?   " **output:** "Hola como están?"
+9. `RemoveUserMentions` **input:** "Hola @channel como van?" **output:** "CHola como van?"
+10. `RemoveUrls`  **input:** "Revisen este recurso https://www.algo.com" **output:** "Revisen este recurso "
+11. `RemoveHashtags` **input:** "Hola #equipo bienvenidos" **output:** "Hola  bienvenidos"
+12. `RemoveTicks` **input:** "Hola, que' más'" **output:** "Hola, que más"
+13. `RemoveBackTicks` **input:** "Hola, que` más`" **output:** "Hola, que más"
+14. `RemovePunctuation`  **input:** "Mensaje...,con, puntos" **output:** "Mensaje con puntos"
+15. `RemoveNumbers` **input:** "Hay 12 patacones  y 20 yucas" **output:** "Hay patacones y yucas"
+16. `RemoveAccents` **input:** "La canción es una sensación" **output:** "La cancion es una sensacion"
+17. `RemoveStopWords` **input:** "La canción y la letra es buena" **output:** "canción letra buena"
+18. `RemoveArticles` **input:** "La canción y la letra es buena" **output:** "canción y letra es buena"
+19. `RemoveEmoticons` **input:** "Hola ;) como estás? XD" **output:** "Hola como estás?"
+20. `RemovePronouns` **input:** "Yo pienso que ella debería ser como él" **output:** "pienso que debería ser como"
+21. `RemoveAdverbs` 
 22. `RemoveConjunctions`
 23. `RemovePrepositions`
 24. `RemoveAdjectives`
