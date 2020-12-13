@@ -340,8 +340,8 @@ Son 28 algoritmos y son:
 22. `RemoveConjunctions`
 23. `RemovePrepositions`
 24. `RemoveAdjectives`
-25. `RemoveHtmlTags`
-26. `RemoveEmailAddress`
+25. `RemoveHtmlTags` **input:** "Hola <strong>USUARIO</strong> que tal?" **output:** "Hola USUARIO que tal?"
+26. `RemoveEmailAddress` **input:** "Hola Pepito, el correo es contacto@domain.com" **output:** "Hola Pepito, el correo es "
 27. `ExpandAbbreviations`
 28. `RemoveAbbreviations`
 
