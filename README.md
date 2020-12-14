@@ -20,6 +20,9 @@
     <a href="https://test.pypi.org/project/spanlp/">
       <img src="https://img.shields.io/badge/test--pypi-v0.0.5-yellow"/>
     </a>
+  <a href="https://test.pypi.org/project/spanlp/">
+      <img src="https://img.shields.io/badge/license-MIT-brightgreen"/>
+    </a>
   </p>
   
   <p align="center">
