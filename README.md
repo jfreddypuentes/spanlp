@@ -94,6 +94,7 @@ Incluye:
 | Soporte de tokens con números     |     ✓      |     OK      | v0.0.5   |  
 | Estrategias de limpieza de datos  |     ✓      |     OK.     | v0.0.5   |
 | Hamming                           |  Progreso  |             |    -     |
+| Ampliación datasets               |  Progreso  |             |    -     |
 | Levenstein                        |     -      |             |    -     |
 | Bag distance                      |     -      |             |    -     |
 | Sorensen-Dice coefficient         |     -      |             |    -     |
