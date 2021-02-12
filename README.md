@@ -93,7 +93,9 @@ Incluye:
 |-----------------------------------|------------|-------------|-----------
 | Soporte de tokens con números     |     ✓      |     OK      | v0.0.5   |  
 | Estrategias de limpieza de datos  |     ✓      |     OK.     | v0.0.5   |
+| Completa dataset                  |  Progreso  |             |    -     |
 | Hamming                           |  Progreso  |             |    -     |
+| Ampliación datasets               |  Progreso  |             |    -     |
 | Levenstein                        |     -      |             |    -     |
 | Bag distance                      |     -      |             |    -     |
 | Sorensen-Dice coefficient         |     -      |             |    -     |
@@ -339,14 +341,14 @@ Son 28 algoritmos y son:
 18. `RemoveArticles` **input:** "La canción y la letra es buena" **output:** "canción y letra es buena"
 19. `RemoveEmoticons` **input:** "Hola ;) como estás? XD" **output:** "Hola como estás?"
 20. `RemovePronouns` **input:** "Yo pienso que ella debería ser como él" **output:** "pienso que debería ser como"
-21. `RemoveAdverbs` 
-22. `RemoveConjunctions`
-23. `RemovePrepositions`
-24. `RemoveAdjectives`
+21. `RemoveAdverbs` **input:** "muchos años despues frente al peloton de fusilamiento lentamente recordaba..." **output:** "muchos años frente al peloton de fusilamiento recordaba..."
+22. `RemoveConjunctions` **input:** "y entonces estaba programando aunque con sueño pero concentrado creando esta libreria" **output:** "entonces estaba programando con sueño concentrado creando esta libreria"
+23. `RemovePrepositions` **input:** "ante todo es mejor cuidar a la naturaleza mediante buenas acciones. entre todos podemos." **output:** "todo es mejor cuidar la naturaleza buenas acciones. todos podemos."
+24. `RemoveAdjectives` **input:** "la voz era tenebrosa y la noche estaba fria y oscura hasta que de pronto algo luminoso apareció y" **output:** "la voz era y la noche estaba y hasta que de pronto algo apareció y"
 25. `RemoveHtmlTags` **input:** "Hola <strong>USUARIO</strong> que tal?" **output:** "Hola USUARIO que tal?"
 26. `RemoveEmailAddress` **input:** "Hola Pepito, el correo es contacto@domain.com" **output:** "Hola Pepito, el correo es "
-27. `ExpandAbbreviations`
-28. `RemoveAbbreviations`
+27. `ExpandAbbreviations` **input:** "pero xq tengo es3 si yo estaba bn en clase, ahora me duelen to2 los musculos" **output:** "pero por que tengo estres si yo estaba bien en clase, ahora me duelen todos los musculos"
+28. `RemoveAbbreviations` **input:** "xfa pongase el tapabocas pq me da es3 verlo sin eso. to2 debemos cuidarnos. chas gracias. salu2" **output:** "pongase el tapabocas me da verlo sin eso. debemos cuidarnos. gracias."
 
 
 La nueva clase `Preprocessing` implementa de manera flexible y dinámica cualquier estrategia de limpieza de una manera muy simple. Se puede aplicar dentro de una metrica de distancia como `JaccardIndex` o `CosineSimilarity` para darle más poder a la busqueda, dismunir el riesgo de no encontrar las palabras a censurar y aumentar la posibilidad de censurar las palabras que son por el hecho de estar limpias.
