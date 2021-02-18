@@ -9,16 +9,16 @@
   
   <p align="center">
     <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/version-v0.0.5-green"/>
+      <img src="https://img.shields.io/badge/version-v1.0.1-green"/>
     </a>
     <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/status-beta--stable-blue"/>
+      <img src="https://img.shields.io/badge/status-stable-blue"/>
     </a>
   <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/release-v0.0.5-brightgreen"/>
+      <img src="https://img.shields.io/badge/release-v1.0.1-brightgreen"/>
     </a>
     <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/test--pypi-v0.0.5-yellow"/>
+      <img src="https://img.shields.io/badge/test--pypi-v0.0.6-yellow"/>
     </a>
   <a href="https://test.pypi.org/project/spanlp/">
       <img src="https://img.shields.io/badge/license-MIT-brightgreen"/>
@@ -29,8 +29,6 @@
     <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jfreddypuentes/spanlp?style=social">
   </p>
 </p>
-
-⚡⚡ **Nuevo Release v0.0.5** ⚡⚡ Implementación de 28 algoritmos de limpieza y pre-procesamiento de datos
 
 <hr>
 
@@ -43,7 +41,7 @@
 - [Funcionamiento](#funcionamiento)
   - [Uso básico](#uso-basico)
   - [Uso avanzado](#uso-avanzado)
-  - [Pre-procesamiento de datos](#preprocesamiento-de-texto) ⚡⚡ **Nuevo v0.0.5** ⚡⚡
+  - [Pre-procesamiento de datos](#preprocesamiento-de-texto)
 - [Beta Testing](#beta-testing)
 - [Reportar un bug](#reportar-un-bug)
 - [Contribuidorxs](#contribuidorxs)
@@ -105,12 +103,14 @@ Incluye:
 
 
 ## Instalación
-**Nota:** Esta versión se encuentra en Beta. No la use en producción aún. 
-Te recomiendo que la instales, pruebes y haz doble check sobre los resultados.
-Si encuentras algún problema escribeme o puedes crear un issue [aquí](https://github.com/jfreddypuentes/spanlp/issues/new)
-
+Para instalar la última versión use:
 ```console
-pip install -i https://test.pypi.org/simple/ spanlp
+pip install spanlp
+```
+
+Para instalar una versión específica use (por ejemplo):
+```
+pip install spanlp==1.0.1
 ```
 
 ## Funcionamiento
