@@ -90,8 +90,8 @@ Incluye:
 | Funcionalidad                     | Desarrollo |   Pruebas   | Release  |
 |-----------------------------------|------------|-------------|-----------
 | Soporte de tokens con números     |     ✓      |     OK      | v0.0.5   |  
-| Estrategias de limpieza de datos  |     ✓      |     OK.     | v0.0.5   |
-| Completa dataset                  |  Progreso  |             |    -     |
+| Estrategias de limpieza de datos  |     ✓      |     OK      | v0.0.5   |
+| Completar dataset                 |     ✓      |     OK      | v1.0.1   |
 | Hamming                           |  Progreso  |             |    -     |
 | Ampliación datasets               |  Progreso  |             |    -     |
 | Levenstein                        |     -      |             |    -     |
