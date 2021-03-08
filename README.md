@@ -92,7 +92,7 @@ Incluye:
 | Soporte de tokens con números     |     ✓      |     OK      | v0.0.5   |  
 | Estrategias de limpieza de datos  |     ✓      |     OK      | v0.0.5   |
 | Completar dataset                 |     ✓      |     OK      | v1.0.1   |
-| Hamming                           |  Progreso  |             |    -     |
+| Hamming                           |     ✓      |  Progreso   |    -     |
 | Ampliación datasets               |  Progreso  |             |    -     |
 | Levenstein                        |     -      |             |    -     |
 | Bag distance                      |     -      |             |    -     |
