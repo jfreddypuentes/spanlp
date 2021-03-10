@@ -89,17 +89,17 @@ Incluye:
 
 | Funcionalidad                     | Desarrollo |   Pruebas   | Release  |
 |-----------------------------------|------------|-------------|-----------
-| Soporte de tokens con números     |     ✓      |     OK      | v0.0.5   |  
-| Estrategias de limpieza de datos  |     ✓      |     OK      | v0.0.5   |
-| Completar dataset                 |     ✓      |     OK      | v1.0.1   |
-| Hamming                           |     ✓      |  Progreso   |    -     |
-| Ampliación datasets               |  Progreso  |             |    -     |
+| Soporte de tokens con números     |     ✓      |      ✓      | v0.0.5   |  
+| Estrategias de limpieza de datos  |     ✓      |      ✓      | v0.0.5   |
+| Completar dataset                 |     ✓      |      ✓      | v1.0.1   |
+| Hamming                           |     ✓      |      ✓      | v1.0.2   |
 | Levenstein                        |     -      |             |    -     |
 | Bag distance                      |     -      |             |    -     |
 | Sorensen-Dice coefficient         |     -      |             |    -     |
 | Tversky index                     |     -      |             |    -     |
 | Overlap index                     |     -      |             |    -     |
 | Tanimoto distance                 |     -      |             |    -     |
+| Ampliación datasets               |  Progreso  |      -      |    -     |
 
 
 ## Instalación
