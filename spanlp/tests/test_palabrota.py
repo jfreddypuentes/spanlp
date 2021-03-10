@@ -1,5 +1,5 @@
 from spanlp.domain.countries import Country
-from spanlp.domain.strategies import CosineSimilarity, JaccardIndex
+from spanlp.domain.strategies import CosineSimilarity, JaccardIndex, HammingDistance
 from spanlp.domain.strategies import TextToLower, TextToUpper, RemoveUnicodeCharacters, NumbersToVowelsInLowerCase
 from spanlp.domain.strategies import NumbersToVowelsInUpperCase, NumbersToConsonantsInLowerCase, \
     NumbersToConsonantsInUpperCase, RemoveNumbers, RemoveExtraSpaces, RemoveUserMentions, RemoveUrls, RemoveHashtags, \
@@ -412,3 +412,19 @@ def test_remove_abbrevations():
     cleaned2 = Preprocessing(data=message, clean_strategies=strategies).clean()
     assert cleaned1 == expected
     assert cleaned2 == expected
+
+
+def test_hamming_distance():
+    hamming = HammingDistance()
+    expected = 1
+    actually = hamming.calculate("hola", "Hola")
+    assert expected == actually
+    assert expected > 0
+
+
+def test_hamming_distance2():
+    hamming = HammingDistance()
+    expected = 4
+    actually = hamming.calculate("hola", "HOLA")
+    assert expected == actually
+    assert expected > 0

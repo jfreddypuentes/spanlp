@@ -10,6 +10,7 @@ import string
 class DistanceMetricStrategy(enum.Enum):
     JaccardIndex = 'JaccardIndex'
     CosineSimilarity = 'CosineSimilarity'
+    HammingDistance = 'HammingDistance'
 
 
 class CleanDataStrategy:
@@ -133,6 +134,27 @@ class CosineSimilarity(TextDistanceStrategy):
     def cosine_distance(cls, v1, v2):
         common = v1[1].intersection(v2[1])
         return sum(v1[0][ch] * v2[0][ch] for ch in common) / v1[2] / v2[2]
+
+
+class HammingDistance(TextDistanceStrategy):
+    def __init__(self, threshold=3, normalize=False, clean_strategies: [CleanDataStrategy] = None) -> None:
+        super().__init__(name=DistanceMetricStrategy.HammingDistance.name, threshold=threshold, normalize=normalize,
+                         clean_strategies=clean_strategies)
+
+    def calculate(self, word1: str, word2: str) -> float:
+        if self.normalize_text:
+            word1 = self.normalize(word1)
+            word2 = self.normalize(word2)
+        return self.hamming_distance(word1, word2)
+
+    @classmethod
+    def hamming_distance(cls, word1, word2) -> int:
+        if len(word1) != len(word2):
+            raise Exception(f"La cadena <{word1}> y <{word2}> tienen diferente longitud. \n"
+                            f"Hamming distance es una buena estrategia para cadenas del mismo tamano.\n"
+                            f"Si piensa usarlo para detectar si dos cadenas de texto son diferentes "
+                            f"entonces, controle la excepcion en su codigo.")
+        return sum(el1 != el2 for el1, el2 in zip(word1, word2))
 
 
 class Preprocessing:
