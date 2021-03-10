@@ -13,7 +13,7 @@ import re
 import random
 
 from spanlp.domain.countries import Country
-from spanlp.domain.strategies import TextDistanceStrategy
+from spanlp.domain.strategies import TextDistanceStrategy, DistanceMetricStrategy
 
 _ROOT = os.path.abspath(os.path.dirname(__file__))
 
@@ -195,9 +195,18 @@ class Palabrota(object):
         for word in words:
             for working_word in working_words:
                 distance = self._distance_metric.calculate(word, working_word)
-                if distance >= self._distance_metric.threshold:
-                    working_text = working_text.replace(working_word,
-                                                        "".join(self.__get_censor_char() for i in list(working_word)))
+                replace = False
+
+                if self._distance_metric.name == DistanceMetricStrategy.HammingDistance.name:
+                    if distance <= self._distance_metric.threshold:
+                        replace = True
+                else:
+                    if distance >= self._distance_metric.threshold:
+                        replace = True
+
+                if replace:
+                    working_text = working_text.replace(
+                        working_word, "".join(self.__get_censor_char() for i in list(working_word)))
 
         return working_text
 

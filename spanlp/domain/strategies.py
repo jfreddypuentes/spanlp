@@ -150,10 +150,7 @@ class HammingDistance(TextDistanceStrategy):
     @classmethod
     def hamming_distance(cls, word1, word2) -> int:
         if len(word1) != len(word2):
-            raise Exception(f"La cadena <{word1}> y <{word2}> tienen diferente longitud. \n"
-                            f"Hamming distance es una buena estrategia para cadenas del mismo tamano.\n"
-                            f"Si piensa usarlo para detectar si dos cadenas de texto son diferentes "
-                            f"entonces, controle la excepcion en su codigo.")
+            return 999999
         return sum(el1 != el2 for el1, el2 in zip(word1, word2))
 
 

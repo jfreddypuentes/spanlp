@@ -428,3 +428,8 @@ def test_hamming_distance2():
     actually = hamming.calculate("hola", "HOLA")
     assert expected == actually
     assert expected > 0
+
+
+def test_hamming_distance3():
+    palabrota = Palabrota(censor_char="*", countries=[Country.VENEZUELA], distance_metric=HammingDistance())
+    print(palabrota.censor("Huevon", "huevon"))
