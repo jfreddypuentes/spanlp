@@ -213,10 +213,11 @@ print(palabrota.censor("Hola huevon marico cómo está?"))
 
 ### Uso Avanzado
 El uso avanzado incluye usar metricas de distancia y similitud para encontrar, comparar, censurar palabras.
-Estas son las metrcias usadas a la fecha:
-1. [Indice de Jaccard](https://es.wikipedia.org/wiki/%C3%8Dndice_Jaccard) ([Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index))
-2. [Similitud del coseno](https://es.wikipedia.org/wiki/Similitud_coseno) ([Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity))
-
+Estas son las metricas usadas a la fecha:
+1. [ES-Indice de Jaccard](https://es.wikipedia.org/wiki/%C3%8Dndice_Jaccard) ([EN-Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index))
+2. [ES-Similitud del coseno](https://es.wikipedia.org/wiki/Similitud_coseno) ([EN-Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity))
+3. [ES-Levenshtein](https://es.wikipedia.org/wiki/Distancia_de_Levenshtein)([EN-Levenshtein](https://en.wikipedia.org/wiki/Levenshtein_distance))
+4. [ES-Damerau-Levenshtein](https://es.wikipedia.org/wiki/Distancia_de_Damerau-Levenshtein)([EN-Damerau-Levenshtein](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance))
 
 Censuremos la frase usando Cosine Similarity 
 ```python
