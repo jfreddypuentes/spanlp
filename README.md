@@ -9,16 +9,16 @@
   
   <p align="center">
     <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/version-v1.0.1-green"/>
+      <img src="https://img.shields.io/badge/version-v1.1.0-green"/>
     </a>
     <a href="https://test.pypi.org/project/spanlp/">
       <img src="https://img.shields.io/badge/status-stable-blue"/>
     </a>
   <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/release-v1.0.1-brightgreen"/>
+      <img src="https://img.shields.io/badge/release-v1.1.0-brightgreen"/>
     </a>
     <a href="https://test.pypi.org/project/spanlp/">
-      <img src="https://img.shields.io/badge/test--pypi-v0.0.6-yellow"/>
+      <img src="https://img.shields.io/badge/test--pypi-v0.0.7-yellow"/>
     </a>
   <a href="https://test.pypi.org/project/spanlp/">
       <img src="https://img.shields.io/badge/license-MIT-brightgreen"/>
@@ -93,7 +93,7 @@ Incluye:
 | Estrategias de limpieza de datos  |     ✓      |      ✓      | v0.0.5   |
 | Completar dataset                 |     ✓      |      ✓      | v1.0.1   |
 | Hamming                           |     ✓      |      ✓      | v1.0.2   |
-| Levenstein                        |     -      |             |    -     |
+| Levenstein                        |     ✓      |      ✓      | v1.1.0   |
 | Bag distance                      |     -      |             |    -     |
 | Sorensen-Dice coefficient         |     -      |             |    -     |
 | Tversky index                     |     -      |             |    -     |
@@ -110,7 +110,7 @@ pip install spanlp
 
 Para instalar una versión específica use (por ejemplo):
 ```
-pip install spanlp==1.0.1
+pip install spanlp==1.1.0
 ```
 
 ## Funcionamiento

@@ -6,7 +6,7 @@ with open('README.md', 'r') as readme_file:
 st.setup(
     name='spanlp',
     packages=st.find_packages(include=['spanlp', 'spanlp.*']),
-    version='1.0.1',
+    version='1.1.0',
     description='A fast, robust Python library to check for profanity or offensive language in Spanish strings.'
                 'It contains all the rude words of Spanish-speaking countries (Argentina, Bolivia, Chile, Colombia, '
                 'Costa Rica, Cuba, Ecuador, El Salvador, España, Guatemala, Guinea Ecuatorial, Honduras, Mexico, '
