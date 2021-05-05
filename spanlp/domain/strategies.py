@@ -11,6 +11,7 @@ class DistanceMetricStrategy(enum.Enum):
     JaccardIndex = 'JaccardIndex'
     CosineSimilarity = 'CosineSimilarity'
     HammingDistance = 'HammingDistance'
+    LevenshteinDistance = 'LevenshteinDistance'
 
 
 class CleanDataStrategy:
@@ -154,6 +155,228 @@ class HammingDistance(TextDistanceStrategy):
         return sum(el1 != el2 for el1, el2 in zip(word1, word2))
 
 
+class LevenshteinComputingWay(enum.Enum):
+    """
+    Lista de estrategias posible de computar la distancia Levenshtein.
+    Orden de mejor rendimiento: DAMERAU, WAGNER_FISCHER, ITERATIVE_WAGNER_FISCHER, RECURSIVE, CLASSIC
+    Mejor rendimiento: DAMERAU, Peor rendimiento: CLASSIC
+    @see https://en.wikipedia.org/wiki/Levenshtein_distance
+    @see https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance
+    """
+    CLASSIC = 'CLASSIC'  # 5
+    RECURSIVE = 'RECURSIVE'  # 4
+    WAGNER_FISCHER = 'WAGNER_FISCHER'  # 2
+    ITERATIVE_WAGNER_FISCHER = 'ITERATIVE_WAGNER_FISCHER'  # 3
+    DAMERAU = 'DAMERAU'  # 1
+
+
+class LevenshteinDistance(TextDistanceStrategy):
+    _computing_way: LevenshteinComputingWay = LevenshteinComputingWay.DAMERAU
+
+    def __init__(self, threshold=3, computing_way: LevenshteinComputingWay = None, normalize=False,
+                 clean_strategies: [CleanDataStrategy] = None) -> None:
+        super().__init__(name=DistanceMetricStrategy.LevenshteinDistance.name, threshold=threshold, normalize=normalize,
+                         clean_strategies=clean_strategies)
+        if computing_way is not None:
+            self._computing_way = computing_way
+
+    def calculate(self, word1: str, word2: str) -> float:
+        if self.normalize_text:
+            word1 = self.normalize(word1)
+            word2 = self.normalize(word2)
+
+        if self._computing_way.name == LevenshteinComputingWay.CLASSIC.name:
+            return self.classic_levenshtein(word1, word2)
+        if self._computing_way.name == LevenshteinComputingWay.RECURSIVE.name:
+            return self.recursive_levenshtein(word1, word2)
+        if self._computing_way.name == LevenshteinComputingWay.WAGNER_FISCHER.name:
+            return self.wagner_fischer_levenshtein(word1, word2)
+        if self._computing_way.name == LevenshteinComputingWay.ITERATIVE_WAGNER_FISCHER.name:
+            return self.iterative_wagner_fischer_levenshtein(word1, word2)
+        if self._computing_way.name == LevenshteinComputingWay.DAMERAU.name:
+            return self.damerau_levenshtein(word1, word2)
+
+    @classmethod
+    def classic_levenshtein(cls, string_1: str, string_2: str):
+        len_1 = len(string_1)
+        len_2 = len(string_2)
+        cost = 0
+
+        if len_1 and len_2 and string_1[0] != string_2[0]:
+            cost = 1
+
+        if len_1 == 0:
+            return len_2
+        elif len_2 == 0:
+            return len_1
+        else:
+            return min(
+                cls.classic_levenshtein(string_1[1:], string_2) + 1,
+                cls.classic_levenshtein(string_1, string_2[1:]) + 1,
+                cls.classic_levenshtein(string_1[1:], string_2[1:]) + cost,
+            )
+
+    @classmethod
+    def recursive_levenshtein(cls, string_1: str, string_2: str, len_1=None, len_2=None, offset_1=0, offset_2=0,
+                              memo=None):
+        if len_1 is None:
+            len_1 = len(string_1)
+
+        if len_2 is None:
+            len_2 = len(string_2)
+
+        if memo is None:
+            memo = {}
+
+        key = ','.join([str(offset_1), str(len_1), str(offset_2), str(len_2)])
+
+        if memo.get(key) is not None:
+            return memo[key]
+
+        if len_1 == 0:
+            return len_2
+        elif len_2 == 0:
+            return len_1
+
+        cost = 0
+
+        if string_1[offset_1] != string_2[offset_2]:
+            cost = 1
+
+        dist = min(
+            cls.recursive_levenshtein(string_1, string_2, len_1 - 1, len_2, offset_1 + 1, offset_2, memo) + 1,
+            cls.recursive_levenshtein(string_1, string_2, len_1, len_2 - 1, offset_1, offset_2 + 1, memo) + 1,
+            cls.recursive_levenshtein(string_1, string_2, len_1 - 1, len_2 - 1, offset_1 + 1, offset_2 + 1,
+                                      memo) + cost,
+        )
+        memo[key] = dist
+        return dist
+
+    @classmethod
+    def wagner_fischer_levenshtein(cls, string_1: str, string_2: str):
+        len_1 = len(string_1) + 1
+        len_2 = len(string_2) + 1
+
+        d = [0] * (len_1 * len_2)
+
+        for i in range(len_1):
+            d[i] = i
+        for j in range(len_2):
+            d[j * len_1] = j
+
+        for j in range(1, len_2):
+            for i in range(1, len_1):
+                if string_1[i - 1] == string_2[j - 1]:
+                    d[i + j * len_1] = d[i - 1 + (j - 1) * len_1]
+                else:
+                    d[i + j * len_1] = min(
+                        d[i - 1 + j * len_1] + 1,  # deletion
+                        d[i + (j - 1) * len_1] + 1,  # insertion
+                        d[i - 1 + (j - 1) * len_1] + 1,  # substitution
+                    )
+
+        return d[-1]
+
+    @classmethod
+    def iterative_wagner_fischer_levenshtein(cls, string_1: str, string_2: str):
+        if string_1 == string_2:
+            return 0
+
+        len_1 = len(string_1)
+        len_2 = len(string_2)
+
+        if len_1 == 0:
+            return len_2
+        if len_2 == 0:
+            return len_1
+
+        if len_1 > len_2:
+            string_2, string_1 = string_1, string_2
+            len_2, len_1 = len_1, len_2
+
+        d0 = [i for i in range(len_2 + 1)]
+        d1 = [j for j in range(len_2 + 1)]
+
+        for i in range(len_1):
+            d1[0] = i + 1
+            for j in range(len_2):
+                cost = d0[j]
+
+                if string_1[i] != string_2[j]:
+                    # substitution
+                    cost += 1
+
+                    # insertion
+                    x_cost = d1[j] + 1
+                    if x_cost < cost:
+                        cost = x_cost
+
+                    # deletion
+                    y_cost = d0[j + 1] + 1
+                    if y_cost < cost:
+                        cost = y_cost
+
+                d1[j + 1] = cost
+
+            d0, d1 = d1, d0
+
+        return d0[-1]
+
+    @classmethod
+    def damerau_levenshtein(cls, string_1: str, string_2: str):
+        if string_1 == string_2:
+            return 0
+
+        len_1 = len(string_1)
+        len_2 = len(string_2)
+
+        if len_1 == 0:
+            return len_2
+        if len_2 == 0:
+            return len_1
+
+        if len_1 > len_2:
+            string_2, string_1 = string_1, string_2
+            len_2, len_1 = len_1, len_2
+
+        d0 = [i for i in range(len_2 + 1)]
+        d1 = [j for j in range(len_2 + 1)]
+        dprev = d0[:]
+
+        s1 = string_1
+        s2 = string_2
+
+        for i in range(len_1):
+            d1[0] = i + 1
+            for j in range(len_2):
+                cost = d0[j]
+
+                if s1[i] != s2[j]:
+                    # substitution
+                    cost += 1
+
+                    # insertion
+                    x_cost = d1[j] + 1
+                    if x_cost < cost:
+                        cost = x_cost
+
+                    # deletion
+                    y_cost = d0[j + 1] + 1
+                    if y_cost < cost:
+                        cost = y_cost
+
+                    # transposition
+                    if i > 0 and j > 0 and s1[i] == s2[j - 1] and s1[i - 1] == s2[j]:
+                        transp_cost = dprev[j - 1] + 1
+                        if transp_cost < cost:
+                            cost = transp_cost
+                d1[j + 1] = cost
+
+            dprev, d0, d1 = d0, d1, dprev
+
+        return d0[-1]
+
+
 class Preprocessing:
 
     def __init__(self, data: str = None, clean_strategies: [CleanDataStrategy] = None) -> None:
@@ -216,7 +439,7 @@ class NumbersToVowelsInUpperCase(CleanDataStrategy):
 class NumbersToConsonantsInLowerCase(CleanDataStrategy):
     def clean(self, data: str) -> str:
         if data:
-            return data.replace("9", "g").replace("7", "t").replace("5", "s").replace("2", "z")\
+            return data.replace("9", "g").replace("7", "t").replace("5", "s").replace("2", "z") \
                 .replace("1", "l").replace("6", "g")
         return ""
 
@@ -224,7 +447,7 @@ class NumbersToConsonantsInLowerCase(CleanDataStrategy):
 class NumbersToConsonantsInUpperCase(CleanDataStrategy):
     def clean(self, data: str) -> str:
         if data:
-            return data.replace("8", "B").replace("6", "G").replace("5", "S").replace("2", "Z")\
+            return data.replace("8", "B").replace("6", "G").replace("5", "S").replace("2", "Z") \
                 .replace("1", "L").replace("9", "G").replace("7", "T")
         return ""
 
@@ -288,9 +511,9 @@ class RemoveNumbers(CleanDataStrategy):
 class RemoveAccents(CleanDataStrategy):
     def clean(self, data: str) -> str:
         if data:
-            data = data.replace("á", "a").replace("é", "e").replace("í", "i")\
+            data = data.replace("á", "a").replace("é", "e").replace("í", "i") \
                 .replace("ó", "o").replace("ú", "u").replace("ñ", "n")
-            data = data.replace("Á", "a").replace("É", "e").replace("Í", "i")\
+            data = data.replace("Á", "a").replace("É", "e").replace("Í", "i") \
                 .replace("Ó", "o").replace("Ú", "u").replace("Ñ", "N")
             return data
         return ""
