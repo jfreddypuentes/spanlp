@@ -197,7 +197,8 @@ class Palabrota(object):
                 distance = self._distance_metric.calculate(word, working_word)
                 replace = False
 
-                if self._distance_metric.name == DistanceMetricStrategy.HammingDistance.name:
+                if self._distance_metric.name == DistanceMetricStrategy.HammingDistance.name \
+                or self._distance_metric.name == DistanceMetricStrategy.LevenshteinDistance.name:
                     if distance <= self._distance_metric.threshold:
                         replace = True
                 else:

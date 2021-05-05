@@ -1,5 +1,5 @@
 from spanlp.domain.countries import Country
-from spanlp.domain.strategies import CosineSimilarity, JaccardIndex, HammingDistance
+from spanlp.domain.strategies import CosineSimilarity, JaccardIndex, HammingDistance, LevenshteinDistance
 from spanlp.domain.strategies import TextToLower, TextToUpper, RemoveUnicodeCharacters, NumbersToVowelsInLowerCase
 from spanlp.domain.strategies import NumbersToVowelsInUpperCase, NumbersToConsonantsInLowerCase, \
     NumbersToConsonantsInUpperCase, RemoveNumbers, RemoveExtraSpaces, RemoveUserMentions, RemoveUrls, RemoveHashtags, \
@@ -432,4 +432,33 @@ def test_hamming_distance2():
 
 def test_hamming_distance3():
     palabrota = Palabrota(censor_char="*", countries=[Country.VENEZUELA], distance_metric=HammingDistance())
+    print(palabrota.censor("Huevon", "huevon"))
+
+
+def test_levenshtein_distance():
+    levenshtein = LevenshteinDistance()
+    expected = 1
+    actually = levenshtein.calculate("hola", "Hola")
+    assert expected == actually
+    assert expected > 0
+
+
+def test_levenshtein_distance1():
+    levenshtein = LevenshteinDistance()
+    expected = 2
+    actually = levenshtein.calculate("hola", "Holaa")
+    assert expected == actually
+    assert expected > 0
+
+
+def test_levenshtein_distance2():
+    levenshtein = LevenshteinDistance()
+    expected = 3
+    actually = levenshtein.calculate("holaaa", "Hola")
+    assert expected == actually
+    assert expected > 0
+
+
+def test_test_levenshtein_distance3():
+    palabrota = Palabrota(censor_char="*", countries=[Country.VENEZUELA], distance_metric=LevenshteinDistance())
     print(palabrota.censor("Huevon", "huevon"))

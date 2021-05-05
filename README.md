@@ -559,7 +559,13 @@ Una vez tengas los tests listos, ejecuta el siguiente comando en la raiz del pro
 pytest -ra
 ```
 
-Esto ejecutará de forma automática todas las pruebas programadas e indicará si algun test falló.
+o tambien el comando:
+
+```
+python -m pytest
+```
+
+Esto ejecutará de forma automática todas las pruebas programadas e indicará si algún test falló.
 
 
 ## Reportar un bug
