@@ -42,7 +42,7 @@
   - [Uso básico](#uso-basico)
   - [Uso avanzado](#uso-avanzado)
   - [Pre-procesamiento de datos](#preprocesamiento-de-texto)
-- [Beta Testing](#beta-testing)
+- [Testing](#testing)
 - [Reportar un bug](#reportar-un-bug)
 - [Contribuidorxs](#contribuidorxs)
 - [Contacto](#contacto)
