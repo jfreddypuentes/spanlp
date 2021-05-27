@@ -12,6 +12,7 @@ class DistanceMetricStrategy(enum.Enum):
     CosineSimilarity = 'CosineSimilarity'
     HammingDistance = 'HammingDistance'
     LevenshteinDistance = 'LevenshteinDistance'
+    BagDistance = 'BagDistance'
 
 
 class CleanDataStrategy:
@@ -375,6 +376,23 @@ class LevenshteinDistance(TextDistanceStrategy):
             dprev, d0, d1 = d0, d1, dprev
 
         return d0[-1]
+
+
+class BagDistance(TextDistanceStrategy):
+    def __init__(self, threshold=0.9, normalize=False, clean_strategies: [CleanDataStrategy] = None) -> None:
+        super().__init__(name=DistanceMetricStrategy.BagDistance.name, threshold=threshold, normalize=normalize,
+                         clean_strategies=clean_strategies)
+
+    def calculate(self, word1: str, word2: str) -> float:
+        if self.normalize_text:
+            word1 = self.normalize(word1)
+            word2 = self.normalize(word2)
+        return self.bag_distance(word1, word2)
+
+    @classmethod
+    def bag_distance(cls, word1, word2) -> int:
+        # TODO: Implement logic
+        return None
 
 
 class Preprocessing:
