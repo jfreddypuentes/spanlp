@@ -8,6 +8,8 @@ import string
 
 
 class DistanceMetricStrategy(enum.Enum):
+    """ All distance metric to check words """
+
     JaccardIndex = 'JaccardIndex'
     CosineSimilarity = 'CosineSimilarity'
     HammingDistance = 'HammingDistance'
@@ -15,6 +17,7 @@ class DistanceMetricStrategy(enum.Enum):
 
 
 class CleanDataStrategy:
+    """ Principal component for cleaning data """
 
     @classmethod
     def remove_dynamic_tokens(cls, data: str, words: [str] = None):
@@ -29,6 +32,8 @@ class CleanDataStrategy:
 
 
 class TextDistanceStrategy(object):
+    """ Principal component to wrap any strategy of distance metric """
+
     name = ''
     threshold = 0.0
     normalize_text = False
@@ -69,6 +74,7 @@ class TextDistanceStrategy(object):
 
 
 class JaccardIndex(TextDistanceStrategy):
+    """ Also known as the Jaccard similarity coefficient See: https://en.wikipedia.org/wiki/Jaccard_index """
     n_gram = 2
 
     def __init__(self, threshold=0.8, n_gram=2, normalize=False, clean_strategies: [CleanDataStrategy] = None) -> None:
@@ -117,6 +123,7 @@ class JaccardIndex(TextDistanceStrategy):
 
 
 class CosineSimilarity(TextDistanceStrategy):
+    """ See: https://en.wikipedia.org/wiki/Cosine_similarity """
 
     def __init__(self, threshold=0.9, normalize=False, clean_strategies: [CleanDataStrategy] = None) -> None:
         super().__init__(name=DistanceMetricStrategy.CosineSimilarity.name, threshold=threshold, normalize=normalize,
@@ -138,6 +145,8 @@ class CosineSimilarity(TextDistanceStrategy):
 
 
 class HammingDistance(TextDistanceStrategy):
+    """ See: https://en.wikipedia.org/wiki/Hamming_distance """
+
     def __init__(self, threshold=3, normalize=False, clean_strategies: [CleanDataStrategy] = None) -> None:
         super().__init__(name=DistanceMetricStrategy.HammingDistance.name, threshold=threshold, normalize=normalize,
                          clean_strategies=clean_strategies)
@@ -378,6 +387,7 @@ class LevenshteinDistance(TextDistanceStrategy):
 
 
 class Preprocessing:
+    """ Principal component to wrap all cleaning strategies in one method (clean) """
 
     def __init__(self, data: str = None, clean_strategies: [CleanDataStrategy] = None) -> None:
         self._text = data
