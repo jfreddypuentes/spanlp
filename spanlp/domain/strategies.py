@@ -407,6 +407,17 @@ class TextToLower(CleanDataStrategy):
             return data.lower()
         return ""
 
+class RemoveDuplicates(CleanDataStrategy):
+    def clean(self, data: str) -> str:
+        wordList = list(data)
+        if len(wordList) >= 2:
+                for i in range(len(wordList)-1):
+                    if wordList[i] == wordList[i+1]:
+                            wordList[i] = ''
+
+                return ''.join(wordList)
+        return data
+
 
 class TextToUpper(CleanDataStrategy):
     def clean(self, data: str) -> str:
