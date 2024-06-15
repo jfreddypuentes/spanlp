@@ -100,6 +100,7 @@ Incluye:
 | Overlap index                     |     -      |             |    -     |
 | Tanimoto distance                 |     -      |             |    -     |
 | Ampliación datasets               |  Progreso  |      -      |    -     |
+| % de palabrotas en el texto       |     -      |      -      |    -     |
 
 
 ## Instalación
